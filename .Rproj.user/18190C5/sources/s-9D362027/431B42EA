@@ -1,0 +1,26 @@
+{
+    "id": "431B42EA",
+    "path": "~/Dropbox (Personal)/course/franks-blogdown/config/_default/params.toml",
+    "project_path": "config/_default/params.toml",
+    "type": "toml",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1620766980657.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "44,0",
+        "scrollLine": "18"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1620748894,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1620748894,
+    "read_only": false,
+    "read_only_alternatives": []
+}

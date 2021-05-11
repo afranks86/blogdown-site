@@ -1,0 +1,244 @@
+
+****** CONFERENCE PAPERS *******
+
+****** JOURNAL PAPERS *******
+
+@article{melo2013solution,
+  title={A Solution to the Challenge of Optimization on ''Golf-Course''-Like Fitness Landscapes},
+  author={Melo, Hygor Piaget M. and \textbf{Franks}, \textbf{Alexander} and Moreira, Andr{\'e} A. and Diermeier, Daniel and Andrade Jr, Jos{\'e} S. and  Amaral, Lu{\'\i}s A. Nunes},
+  journal={PloS one},
+  volume=8,
+  number=11,
+  pages={e78401},
+  year=2013,
+  publisher={Public Library of Science},
+  abstract={Genetic algorithms (GAs) have been used to find efficient solutions to numerous fundamental and applied problems. While GAs are a robust and flexible approach to solve complex problems, there are some situations under which they perform poorly. Here, we introduce a genetic algorithm approach that is able to solve complex tasks plagued by so-called ''golf-course''-like fitness landscapes. Our approach, which we denote variable environment genetic algorithms (VEGAs), is able to find highly efficient solutions by inducing environmental changes that require more complex solutions and thus creating an evolutionary drive. Using the density classification task, a paradigmatic computer science problem, as a case study, we show that more complex rules that preserve information about the solution to simpler tasks can adapt to more challenging environments. Interestingly, we find that conservative strategies, which have a bias toward the current state, evolve naturally as a highly efficient solution to the density classification task under noisy conditions.}
+}
+
+@article{covariance2014,
+author = {\textbf{Alexander} \textbf{M.} \textbf{Franks} and Cs{\'a}rdi, G{\'a}bor and D. Allan Drummond and Edoardo M. Airoldi},
+title = {Estimating a Structured Covariance Matrix From Multilab Measurements in High-Throughput Biology},
+journal = {Journal of the American Statistical Association},
+volume = {110},
+number = {509},
+pages = {27-44},
+year = {2015},
+doi = {10.1080/01621459.2014.964404},
+
+URL = { 
+        http://dx.doi.org/10.1080/01621459.2014.964404
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/01621459.2014.964404
+}}
+
+
+@article{csardi2014,
+  title={Accounting for experimental noise reveals that transcription dominates control of steady-state protein levels in yeast},
+  author={Cs{\'a}rdi, G{\'a}bor and \textbf{Franks}, \textbf{Alexander} and Choi, David S and Airoldi, Edoardo M and Drummond, D. Allan},
+  journal={PLoS Genetics},
+  year={2015},
+  note={\url{http://www.plosgenetics.org/article/Metrics/info:doi/10.1371/journal.pgen.1005206}},
+  abstract = {Cells respond to their environment by modulating protein levels through mRNA transcription and post-transcriptional control. Modest correlations between global steady-state mRNA and protein measurements have been interpreted as evidence that transcript levels determine roughly 40\% of the variation in protein levels, indicating dominant post-transcriptional effects. However, the techniques underlying these conclusions, such as correlation and regression, yield biased results when data are noisy, missing systematically, and collinear—properties of mRNA and protein measurements—which motivated us to revisit this subject. Noise-robust analyses of 25 studies of budding yeast reveal that mRNA levels explain roughly 80\% of the variation in steady-state protein levels. Post-transcriptional regulation amplifies rather than competes with the transcriptional signal. Measurements are highly reproducible within but not between studies, and are distorted in part by between-study differences in gene expression. These results substantially revise current models of protein-level regulation and introduce multiple noise-aware approaches essential for proper analysis of many biological phenomena.}
+}
+
+
+@article{franks2018refining,
+  title={Refining cellular pathway models using an ensemble of heterogeneous data sources},
+  author={\textbf{Franks}, \textbf{Alexander} \textbf{M} and Markowetz, Florian and Airoldi, Edoardo M and others},
+  journal={The Annals of Applied Statistics},
+  volume={12},
+  number={3},
+  pages={1361--1384},
+  year={2018},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@article{franks2014characterizing,
+  title={Characterizing the Spatial Structure of Defensive Skill in Professional Basketball},
+  author={\textbf{Franks}, \textbf{Alexander} and Miller, Andrew and Bornn, Luke and Goldsberry, Kirk},
+  journal={Annals of Applied Statistics},
+  year={2015},
+  note={\url{http://arxiv.org/abs/1405.0231}},
+  abstract = {Although basketball is a dualistic sport, with all players competing on both offense and defense, almost all of the sport{\textquoteright}s conventional metrics are designed to summarize offensive play. As a result, player valuations are largely based on offensive performances and to a much lesser degree on defensive ones. Steals, blocks, and defensive rebounds provide only a limited summary of defensive effectiveness, yet they persist because they summarize salient events that are easy to observe. Due to the inefficacy of traditional defensive statistics, the state of the art in defensive analytics remains qualitative, based on expert intuition and analysis that can be prone to human biases and imprecision.
+  
+Fortunately, emerging optical player tracking systems have the potential to enable a richer quantitative characterization of basketball performance, particularly defensive performance. Unfortunately, due to computational and methodological complexities, that potential remains unmet. This paper attempts to fill this void, combining spatial and spatio-temporal processes, matrix factorization techniques, and hierarchical regression models with player tracking data to advance the state of defensive analytics in the NBA. Our approach detects, characterizes, and quantifies multiple aspects of defensive play in basketball, supporting some common understandings of defensive effectiveness, challenging others, and opening up many new insights into the defensive elements of basketball.}
+}
+
+@article{jqas,
+  title={A mixture-of-modelers approach to forecasting NCAA tournament outcomes},
+  author={Yuan, Lo-Hua and Liu, Anthony and Yeh, Alec and Kaufman, Aaron and Reece, Andrew and Bull, Peter and \textbf{Franks}, \textbf{Alexander} and Wang, Sherrie and Illushin, Dmitri and Bornn, Luke},
+  journal={Journal of Quantitative Analysis in Sports},
+  volume={11},
+  number={1},
+  pages={13--27},
+  year={2015}
+}
+
+@article{Nmar2016,
+  title={Condtionally Specified Models for Non-ignorable Missing Data},
+  author={\textbf{Franks}, \textbf{Alexander} and Airoldi, Edoardo M and Rubin, Donald},
+    note={\url{http://arxiv.org/pdf/1603.06045v1.pdf}}
+}
+
+@article{franks2017post,
+  title={Post-transcriptional regulation across human tissues},
+  author={\textbf{Franks}, \textbf{Alexander} and Airoldi, Edoardo and Slavov, Nikolai},
+  journal={PLoS computational biology},
+  volume=13,
+  number=5,
+  pages={e1005535},
+  year=2017,
+  publisher={Public Library of Science}
+}
+
+@article{ranking2014,
+  title={Bayesian Models for Time-Varying Rank Data},
+  author={\textbf{Franks}, \textbf{Alexander} and Caron, Francois and Bornn, Luke},
+  year={In Preparation.}
+}
+
+@article{heatshock2015,
+  title={Reversible, Specific, Active Aggregates of Endogenous Proteins Assemble upon Heat Stress},
+  author={Wallace, Edward WJ and Kear-Scott, Jamie L and Pilipenko, Evgeny V and Schwartz, Michael H and Laskowski, Pawel R and Rojek, Alexandra E and Katanski, Christopher D and Riback, Joshua A and Dion, Michael F and \textbf{Franks}, \textbf{Alexander} \textbf{M} and others},
+  journal={Cell},
+  volume={162},
+  number={6},
+  pages={1286--1298},
+  year={2015},
+  publisher={Cell Press}
+}
+
+
+@article{heatshock2014,
+  title={Stress-triggered protein assembly is widespread and reversible},
+  author={Wallace, Edward and Kear-Scott, Jamie L. and Rojek, Alexandra and \textbf{Franks}, \textbf{Alexander} and Laskowski, Pawel and Schwartz, Michael and Budnik, Bogdan and Airoldi, Edoardo and Drummond, D. Allan},
+  journal={Cell},
+  year={Revision Invited}
+}
+
+@article{FranksMeta2016,
+  title={Meta-Analytics: Tools for Understanding the Statistical Properties of Sports Metrics},
+  author={\textbf{Franks}, \textbf{Alexander} and D'Amour, Alexander and Cervone, Daniel and Bornn, Luke},
+  note={\url{https://arxiv.org/pdf/1609.09830.pdf}},
+  journal={Journal of Quantitative Analysis of Sports},
+  year={In Press}
+}
+
+
+
+@article{franks2019shared,
+  title={Shared subspace models for multi-group covariance estimation},
+  author={\textbf{Franks}, \textbf{Alexander M} and Hoff, Peter},
+  journal={Journal of Machine Learning Research},
+  volume={20},
+  number={171},
+  pages={1--37},
+  year={2019}
+}
+
+
+@incollection{glickmanbook,
+  author = {Bornn, Luke and Cervone, Daniel and \textbf{Franks}, \textbf{Alexander}, and Miller, Andrew},
+  title = {Studying Basketball Through the Lens of Player Tracking Data},
+  booktitle = {Handbook of Statistical Methods for Design and Analysis in Sports},
+  publisher   = "Chapman and Hall/CRC",
+  year        = {2016},
+}
+
+@book{mackenzies,
+  title={What's happening in the mathematical sciences. Volume 10},
+  author={Mackenzie, Dana and Cipra, Barry},
+  year={2015},
+  publisher={American Mathematical Society}
+}
+
+@article{thomasson2020testing,
+  title={Testing the adaptive value of sporulation in budding yeast using experimental evolution},
+  author={Thomasson, Kelly M and \textbf{Franks}, \textbf{Alexander} and Teot{\'o}nio, Henrique and Proulx, Stephen R},
+  journal={bioRxiv},
+  year={2020},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
+@article{franks2019flexible,
+  title={Flexible sensitivity analysis for observational studies without observable implications},
+  author={\textbf{Franks}, \textbf{Alexander M} and D’Amour, Alexander and Feller, Avi},
+  journal={Journal of the American Statistical Association},
+  pages={1--33},
+  year={2019},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{chen2018dart,
+  title={DART-ID increases single-cell proteome coverage},
+  author={Chen, Albert and \textbf{Franks}, \textbf{Alexander} and Slavov, Nikolai},
+  journal={PLos Computational Biology},
+  year={Just accepted}
+}
+
+@article{hoffman2018companion,
+  title={The companion dog as a model for human aging and mortality},
+  author={Hoffman, Jessica M and Creevy, Kate E and \textbf{Franks}, \textbf{Alexander} and O'Neill, Dan G and Promislow, Daniel EL},
+  journal={Aging cell},
+  volume={17},
+  number={3},
+  pages={e12737},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{terner2020modeling,
+  title={Modeling player and team performance in basketball},
+  author={Zachary Terner and \textbf{Alexander Franks}},
+  journal={Annual Review of Statistics and Its Application},
+  volume={8},
+  year={2020},
+  publisher={Annual Reviews}
+}
+
+@article {Franks201815563,
+	author = {\textbf{Franks}, \textbf{Alexander M.} and Airoldi, Edoardo M. and Rubin, Donald B.},
+	title = {Nonstandard conditionally specified models for nonignorable missing data},
+	elocation-id = {201815563},
+	year = {2020},
+	doi = {10.1073/pnas.1815563117},
+	publisher = {National Academy of Sciences},
+	abstract = {We consider data-analysis settings where data are missing not at random. In these cases, the two basic modeling approaches are 1) pattern-mixture models, with separate distributions for missing data and observed data, and 2) selection models, with a distribution for the data preobservation and a missing-data mechanism that selects which data are observed. These two modeling approaches lead to distinct factorizations of the joint distribution of the observed-data and missing-data indicators. In this paper, we explore a third approach, apparently originally proposed by J. W. Tukey as a remark in a discussion between Rubin and Hartigan, and reported by Holland in a two-page note, which has been so far neglected.Data analyses typically rely upon assumptions about the missingness mechanisms that lead to observed versus missing data, assumptions that are typically unassessable. We explore an approach where the joint distribution of observed data and missing data are specified in a nonstandard way. In this formulation, which traces back to a representation of the joint distribution of the data and missingness mechanism, apparently first proposed by J. W. Tukey, the modeling assumptions about the distributions are either assessable or are designed to allow relatively easy incorporation of substantive knowledge about the problem at hand, thereby offering a possibly realistic portrayal of the data, both observed and missing. We develop Tukey{\textquoteright}s representation for exponential-family models, propose a computationally tractable approach to inference in this class of models, and offer some general theoretical comments. We then illustrate the utility of this approach with an example in systems biology.All raw input and processed output data are available in Dryad (DOI: 10.5061/dryad.rg367 and DOI: 10.5061/dryad.d644f).},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/early/2020/07/27/1815563117},
+	eprint = {https://www.pnas.org/content/early/2020/07/27/1815563117.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+
+@article{franks2020reducing,
+  title={Reducing Subspace Models for Large-Scale Covariance Regression},
+  author={\textbf{Franks, Alexander}},
+  journal={arXiv preprint arXiv:2010.00503},
+  year={2020}
+}
+
+@article{hwangbo2021aging,
+  title={An aging clock using metabolomic {CSF}},
+  author={Hwangbo, Nathan and Zhang, Xinyu and Raftery, Daniel and Gu, Haiwei and Hu, Shu-Ching and Montine, Thomas J and Quinn, Joseph F and Chung, Kathryn A and Hiller, Amie L and Wang, Dongfang and others},
+  journal={bioRxiv},
+  year={2021},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
+@article{zheng2021copula,
+  title={Copula-based Sensitivity Analysis for Multi-Treatment Causal Inference with Unobserved Confounding},
+  author={Zheng, Jiajing and D'Amour, Alexander and {\textbf{Franks}}, {\textbf{Alexander}}},
+  journal={arXiv preprint arXiv:2102.09412},
+  year={2021}
+}
+
+@article{wang2021confounding,
+  title={Learning Gaussian Graphical Models with Latent Confounders},
+  author={Wang, Ke and Oh, Sang-Yun and {\textbf{Franks}}, {\textbf{Alexander}}},
+  journal={TBD},
+  year={2021}
+}

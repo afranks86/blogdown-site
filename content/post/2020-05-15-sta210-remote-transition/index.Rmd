@@ -1,0 +1,141 @@
+---
+title: "From f2f to remote: Part 2 `r emo::ji('woman_technologist_medium_dark_skin_tone')`" 
+subtitle: "Transition to remote teaching & learning"
+author: Maria Tackett
+date: "`r Sys.Date()`"
+slug: f2f-remote-transition
+categories:
+tags:
+  - teaching
+summary: Transition to remote teaching & learning
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+featured: yes
+image: 
+  caption: ""
+  focal_point: ''
+  placement: 2
+  preview_only: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This is the second in a two-part series about my undergraduate regression course in Spring 2020. In [Part 1](../f2f-remote-infrastructure), I described the infrastructure for the course, and in this post, I'll discuss what changed when we transitioned to remote learning mid-semester. 
+
+## Preparing to go remote {#preparation}
+
+### Student Survey
+
+One of the first things I did in the transition was make a survey for my students adapted from this [COVID-19 Student Survey](https://twitter.com/ksm_csed/status/1238117765829079041). Sending this survey was by far the most helpful thing I did to prepare for remote teaching for two reasons:
+
+1. **It helped me get in contact with the students.** This was the most efficient way to try to get in contact with the 90 students in the course, given they were living all over the world. I asked the students to complete the survey within a week. After the deadline, I reached out individually to students who had not yet completed it and eventually was able to get in contact with every student.
+
+2. **It helped me better understand each student's new learning environment.** The primary information I asked for in the survey were the student's
+
+    - time zone
+    - presumed availability during lecture and lab times
+    - access to reliable internet
+
+    There was also an optional section for students to share any questions or concerns they had about moving to the remote format. This gave me a better understanding about some of the other environmental challenge students would face aside from time zone and internet issues. It also helped me understand the general concerns students had, so I was able to address those as I planned for the rest of the semester.
+
+### Training
+
+Like a lot of instructors, this was my first time teaching online, so I went to *a lot* of training workshops and read almost anything I could find about teaching online courses. I can't remember all of them, but here are a few resources I heavily relied on:
+
+- [Webinar: Teaching online on short notice](https://education.rstudio.com/blog/2020/03/teaching-online-on-short-notice/) 
+- [Keep Teaching Workshops by Duke Learning Innovation](https://keepteaching.duke.edu/workshops/)
+- [Resources and tips for teaching (with) R remotely](https://education.rstudio.com/blog/2020/03/resources-for-teaching-data-science-and-statistics-remotely/)
+
+Penn State has an established [online statistics program](https://online.stat.psu.edu/statprogram/), so I also used some of their courses as templates as I adapted mine.
+
+Using all of these resources gave me enough ideas and strategies that I felt ~~completely ready~~ less terrified to teach remotely.
+
+## How the course changed
+
+Since a lot of the course infrastructure was [already online](../f2f-remote-infrastructure), I focused a majority of my effort on adapting the f2f components - lectures, labs, exams, and final presentations. I also made changes to the course policies, the most substantial being around late work, to give students more flexibility but still enough structure to keep up with the course material. The changes to course policies are described in detail in [Remote Learning Updates](https://www2.stat.duke.edu/courses/Spring20/sta210.001/covid-19-updates.html).
+
+### Lectures
+
+As with a lot of courses, the lectures changed the most in the new remote environment. During the f2f lecture, I talked through lecture slides and students worked on small group activities and answered polling questions throughout. As I thought about reorienting the lectures for Zoom, I tried to balance the desire to
+
+- continue meeting for synchronously for lecture.
+
+- not disadvantage students who couldn't attend the synchronous lecture.
+
+- make the synchronous lectures interactive (or at least as interactive as 90 people on Zoom can be).
+
+Taking these considerations into account, I landed on using a "flipped classroom" format where students watched *lecture content videos* on their own, and the *live lecture session* was used to answer questions and work through examples. I used the language *lecture content videos* and *live lecture session* instead of "asynchronous" and "synchronous", to help students more easily keep track of the new lecture format.
+
+### Lecture content videos (asynchronous)
+
+Before each live lecture session, students watched pre-recorded videos that covered the content. In these videos, I talked over lecture slides and included periodic questions to help students think about the material. For the questions, I told students to "pause the video, write down your response to the questions, and we'll discuss them during the live lecture session." I also encouraged students to write down any questions they had about the content, so we could discuss them during the live lecture session.
+
+The pre-recorded lectures were posted about two days in advance in a discussion forum in the learning management system (LMS). I used the discussion forum, so students unable to attend the live lecture sessions could post their questions directly under the video. Their questions were answered during the live lecture sessions.
+
+### Live lecture session (synchronous)
+
+The live lecture sessions were held on Zoom. I started the Zoom session about 5 minutes before class started with a note welcoming students to class. Once class started, I began by answering questions from the content videos. Students in the live session posted their questions in the chat or used Zoom's "raise hand" feature. I answered most questions right away; others I jotted down to address later, since I knew we'd discuss them as we worked on examples.
+
+The remainder of the time was used to go through an example that applied the concepts from the lecture content video. I used the same data that was presented in the video, so students were already familiar with the data set and analysis questions. We focused on the application and code, since the foundational concepts and definitions were covered in the videos.
+
+Periodically, students were randomly assigned to breakout rooms to discuss the questions from the content videos. I visited a few break out rooms during the discussions (students were told beforehand this would happen), and these were definitely the best part of the live lecture sessions. Many of students turned their video on in the breakout rooms, which made everything feel more energetic than in the larger setting where most, if not all, students had their video turned off. Even as students came back to the large discussion, the environment  just felt more lively. I typically called on one or two of the breakout rooms, and one student from each room would share their discussion with the class.
+
+The live lecture sessions were recorded and uploaded to the LMS for students who were unable to attend live.
+
+A few other things that were helpful for lectures:
+
+- I made an [agenda](https://www2.stat.duke.edu/courses/Spring20/sta210.001/slides/lec-slides/live-lecture-apr01.html) for each live session. This was not only helpful for students, but it helped me keep track of the new lecture structure.
+
+- I used an iPad + pencil and the [GoodNotes app](https://www.goodnotes.com/) as a white board. This was easier for me than the Zoom whiteboard, since I often needed to write equations.
+
+- I sent a recap email after each live lecture session that pointed students to the lecture recording, upcoming assignment deadlines, and other announcements and resources.
+
+### Labs
+
+The structure of labs remained largely similar to the structure before the transition. The lab TA did a brief introduction to that day's assignment, then students worked with their groups (assigned before going remote) using the Zoom breakout rooms. The lab TAs visited each breakout at some point during the lab session. 
+
+Students were already familiar with using GitHub for collaboration, so they completed the group lab assignments using a similar workflow as before.
+
+### Exam
+
+I typically give two traditional in-class exams where students answer a series of short-answer questions. Since Exam 2 was remote, I opted for an open-note, open-book exam. More specifically, students could use any resource except for consulting with other people. I tried to keep the format as similar to the first exam as possible, so students downloaded a Word document of the exam from the LMS, typed their responses in the document, saved it as a PDF, and uploaded their PDF to the LMS. The exam was written to be be completed within 75 minutes, but students were allotted 2 hours to provide flexibility in case of computing issues.
+
+A practice exam was given to students using the same format, so they had a week to try out the new format before the actual exam.
+
+### Video presentations
+
+Students started the [final project](https://www2.stat.duke.edu/courses/Spring20/sta210.001/project/project.html) right before the transition to remote learning, so I gave them the option to continue with the project or do something else. They overwhelmingly decided to work on the original project in the same groups. (This is likely because they had been working in these groups since the 3rd week of the semester.)
+
+The project generally remained the same, except for the final presentation. Rather than present in class, each group recorded a video presentation and uploaded it to a discussion thread in the LMS. If groups were unable to make a video, they had the option to upload their slides along with a script of what they would say in a presentation. 
+
+Students were randomly assigned three presentations to watch, and they had to post a question for each presentation. I'll talk about this more in the next section, but I really liked this format!
+
+## What worked & what needs some work
+
+### What worked
+
+`r emo::ji("white_check_mark")` **Having an online-supported infrastructure** I describe the course infrastructure in [Part 1](../f2f-remote-infrastructure). Having course materials and assignments online made the transition much smoother and allowed me to focus on redesigning the f2f elements of the course.
+
+`r emo::ji("white_check_mark")` **Sending the survey**. The student survey was extremely helpful, so I could better plan the course to accommodate a variety of new learning environments.
+    
+`r emo::ji("white_check_mark")` **Having a flipped classroom format for the lectures**. Being able to spend the synchronous lecture answering questions and working through examples was a much better use of the time than going over lecture slides. I also heard from a few students that they liked having the lecture content videos, so they could rewatch any content they needed to review. I'll likely stick with the flipped classroom format even when we go back to f2f classes.
+    
+`r emo::ji("white_check_mark")` **Using Zoom breakout rooms**. As I mentioned earlier, these were fantastic during the live lectures. It gave students an opportunity to talk with each other in small groups and really helped break the monotony of being on Zoom. 
+
+`r emo::ji("white_check_mark")` **Having students record video presentations and post questions in the discussion forum**. The videos were fun to watch, and students were thoughtful in how they organized and presented their analyses. Some groups even included creative technical elements in the videos. Because we weren't constrained by time, students came up with thoughtful questions that really demonstrated their understanding of the course material. This format also gave every student an opportunity to share their thoughts and ask questions.
+  
+### What needs some work
+
+`r emo::ji("hammer_and_wrench")` **Building community in a large online class.** By the time we transitioned to the remote class in the spring, there was already a community established from the first half of the semester. That won't be the case in the fall, so I would like to figure out ways to help students connect remotely from the beginning.
+
+`r emo::ji("hammer_and_wrench")` **Helping students manage teamwork remotely**. Teams worked together f2f for a few weeks before going remote, so they knew each other and were generally able to adapt to their workflow to the new environment. Teams in the fall will work remotely from the beginning and will likely never meet f2f. I anticipate they will need additional guidance on how to build rapport and establish a workflow without the f2f connection.
+
+`r emo::ji("hammer_and_wrench")` **Managing office hours.** For office hours,I used the waiting room feature in Zoom, so I could work with students one at a time. This sometimes resulted in students waiting a while to receive help when they actually had the same questions as the student I was working with at the time. In the fall, I'd like to try a tool such as [My Digital Hand](https://mydigitalhand.org/), where students indicate what they want to discuss in office hours. This way, I can work with groups of students who have the same questions, similar to how I would in f2f office hours. 
+
+<br>
+
+That wraps up my experience teaching remotely in Spring 2020. Now it's time to start figuring out how to do this again in the fall `r emo::ji("upside_down_face")`. 
+
+

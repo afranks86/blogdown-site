@@ -1,0 +1,138 @@
+---
+title: Du Bois Challenge
+author: Maria Tackett
+date: '2021-02-19'
+slug: du-bois-challenge
+categories: []
+tags:
+  - R
+subtitle: ''
+summary: 'Thhis is a short summary'
+authors: []
+lastmod: '2021-02-19T08:22:02-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+```{r include = F}
+knitr::opts_chunk$set(echo = T, 
+                      warning = F, 
+                      message = F)
+```
+
+
+
+This is a test to see how things go.
+
+- brief explanation of challenge
+- why i wanted to do it 
+  black histroy
+  w.e.b. dubois visualizations - got the book
+  it's nice having something to replicate, so i can focus on the coding rather than the creativity
+  
+```{r}
+library(tidyverse)
+library(ggrepel)
+library(showtext)
+```
+
+```{r}
+freed_slaves <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/freed_slaves.csv')
+```
+
+- how i got started. knew i needed area plot + did data prep
+
+```{r}
+freed_slaves_long <- freed_slaves %>%
+  pivot_longer(cols = c("Slave", "Free"), 
+               names_to  = "status", 
+               values_to = "percent") %>%
+  mutate(percent_label = paste0(percent, "%"))
+```
+
+- basic ggplot - i'll call it `p`
+
+```{r first-plot}
+ggplot(data = freed_slaves_long, aes(x = Year, y = percent, fill = status)) +
+  geom_area()
+```
+
+- add colors + theme_void
+
+```{r}
+p <- ggplot(data = freed_slaves_long, aes(x = Year, y = percent, fill = status)) +
+  geom_area() +
+  scale_fill_manual(values=c("#00aa00", "#000000")) +
+  theme_void() + guides(fill = FALSE)
+p
+```
+
+- add labels
+
+```{r}
+p + 
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year != 1870), aes(label  = percent_label, y = 100  - percent + 2.5 )) +
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year == 1870), 
+            aes(label  = percent_label, y = 91.5)) 
+```
+
+- add annotations 
+
+```{r}
+p + 
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year != 1870), aes(label  = percent_label, y = 100  - percent + 2.5 )) +
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year == 1870), 
+            aes(label  = percent_label, y = 91.5)) + 
+  annotate(geom = "text", label  = "SLAVES \n ENCLAVES", color = "white", 
+           x = 1830, y = 50, family = "shoulders") +
+  annotate(geom = "text", label = "FREE - LIBRE", color = "#000000", 
+           x = 1830, y = 95)  
+```
+
+- add title + subtitle
+
+```{r}
+p + 
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year != 1870), aes(label  = percent_label, y = 100  - percent + 2.5 )) +
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year == 1870), 
+            aes(label  = percent_label, y = 91.5)) + 
+  annotate(geom = "text", label  = "SLAVES \n ENCLAVES", color = "white", 
+           x = 1830, y = 50, family = "shoulders") +
+  annotate(geom = "text", label = "FREE - LIBRE", color = "#000000", 
+           x = 1830, y = 95) + 
+   labs(title = "PROPORTION OF FREEMAN AND SLAVES AMONG AMERICAN NEGROS \n 
+       PROPORTION DES NEGRES LIBRES ET ESCLAVES EN AMERIQUE \n", 
+       subtitle = "DONE BY ATLANTA UNIVERSITY")
+```
+
+- used others to figure out background color + font
+
+```{r}
+font_add_google("Cutive", "cutive")
+```
+
+```{r}
+p + 
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year != 1870), aes(label  = percent_label, y = 100  - percent + 2.5 )) +
+  geom_text(data = freed_slaves_long %>% filter(status == "Free", Year == 1870), 
+            aes(label  = percent_label, y = 91.5)) + 
+  annotate(geom = "text", label  = "SLAVES \n ENCLAVES", color = "white", 
+           x = 1830, y = 50, family = "shoulders") +
+  annotate(geom = "text", label = "FREE - LIBRE", color = "#000000", 
+           x = 1830, y = 95)  +
+   labs(title = "PROPORTION OF FREEMAN AND SLAVES AMONG AMERICAN NEGROS \n 
+       PROPORTION DES NEGRES LIBRES ET ESCLAVES EN AMERIQUE \n",
+       subtitle = "DONE BY ATLANTA UNIVERSITY") +
+  theme(plot.background = element_rect(fill = "#e4d2c1"))
+```
+
+
+
+
+
+- complete code on github.
