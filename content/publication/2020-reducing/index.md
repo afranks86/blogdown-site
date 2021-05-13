@@ -19,7 +19,7 @@ draft: false
 image:
   caption: ''
   focal_point: ''
-  preview_only: false
+  preview_only: true
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -32,4 +32,7 @@ publication_types:
 - '2'
 abstract: ''
 publication: '*arXiv preprint arXiv:2010.00503*'
+
+url_pdf: https://arxiv.org/abs/2010.00503
+url_code: https://github.com/afranks86/envelopeR
 ---

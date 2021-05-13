@@ -20,9 +20,10 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
+  placement: 1
+  caption: ""
+  focal_point: Bottom
+  preview_only: true
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -33,7 +34,9 @@ projects: []
 publishDate: '2021-05-11T18:58:15.180874Z'
 publication_types:
 - '2'
-abstract: 'Recent work has focused on the potential and pitfalls of causal identification in observational studies
+
+abstract: '
+Recent work has focused on the potential and pitfalls of causal identification in observational studies
 with multiple simultaneous treatments. On the one hand, a latent variable model fit to the observed
 treatments can identify essential aspects of the distribution of unobserved confounders. On the other
 hand, it has been shown that even when the latent confounder distribution is known exactly, causal effects
@@ -45,7 +48,8 @@ can be layered on top of arbitrary observed data models. We propose a practical 
 approach making use of the Gaussian copula, and establish conditions under which causal effects can
 be bounded. We also describe approaches for reasoning about effects, including calibrating sensitivity
 parameters, quantifying robustness of effect estimates, and selecting models which are most consistent
-with prior hypotheses.'
+with prior hypotheses.
+<center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>' 
 publication: '*arXiv preprint arXiv:2102.09412*'
 
 # links:
