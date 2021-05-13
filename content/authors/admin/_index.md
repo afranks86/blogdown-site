@@ -43,10 +43,13 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/afranks86
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=GXkVYUAAAAAJ&hl=en
 ---
 
 
-I am an Assistant Professor in the Department of Statistics and Applied Probability at the University of California, Santa Barbara. My research interests include covariance estimation, multivariate analysis and high dimensional data, causal inference, missing data, and errors-in-variables models.
+I am an Assistant Professor in the [Department of Statistics and Applied Probability](https://www.pstat.ucsb.edu/) at the University of California, Santa Barbara. My research interests include covariance estimation, multivariate analysis and high dimensional data, causal inference, missing data, and errors-in-variables models.  I'm interested in the analysis of  "omics" data, with a recent focus on proteomics. I also work in sports analytics with a focus on basketball.
 
-My applied research interests include computational and statistical modeling of "omics" data.
+I am on the executive committee of the [Career Development Network (CDN)](https://academicdatascience.org/cdn) for the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org).
 
