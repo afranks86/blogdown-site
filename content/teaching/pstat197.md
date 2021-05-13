@@ -1,7 +1,11 @@
+
+
+
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
-title: "PSTAT 115: Bayesian Data Analysis"
-institution: "UC Santa Barbara"
+title: "PSTAT 197: Data Science Capstone"
+institution: "Current Courses"
+summary: 'Part of the [Central Coast Data Science Partnership](https://centralcoastdatascience.org/)'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -22,13 +26,11 @@ image:
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
-
 links:
-- name: ""
-  url: ""
+- name: Course site
+  url: https://ucsb-ds-capstone-2021.github.io/welcome.html
+#  icon_pack: fab
+#  icon: twitter
+
 ---
+
