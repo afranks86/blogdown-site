@@ -49,7 +49,7 @@ social:
 ---
 
 
-I am an Assistant Professor in the [Department of Statistics and Applied Probability](https://www.pstat.ucsb.edu/) at the University of California, Santa Barbara. My research interests include covariance estimation, multivariate analysis and high dimensional data, causal inference, missing data, and errors-in-variables models.  I'm interested in the analysis of  "omics" data, with a recent focus on proteomics. I also work in sports analytics with a focus on basketball.
+I am an Assistant Professor in the [Department of Statistics and Applied Probability](https://www.pstat.ucsb.edu/) at the University of California, Santa Barbara. My research interests include covariance estimation, Bayesian inference, sensitivity analysis, causal inference, and missing data.  I'm interested in the analysis of  "omics" data, with a recent focus on proteomics. I also work in sports analytics with a focus on basketball.
 
 I am on the executive committee of the [Career Development Network (CDN)](https://academicdatascience.org/cdn) for the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org).
 
