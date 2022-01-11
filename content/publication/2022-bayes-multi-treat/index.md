@@ -1,8 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: Bayesian Inference and Partial Identification in Multi-Treatment
-Causal Inference with Unobserved Confounding
+title: Bayesian Inference and Partial Identification in Multi-Treatment Causal Inference with Unobserved Confounding
 subtitle: ''
 summary: ''
 authors:
@@ -53,7 +52,7 @@ publication: '*arXiv preprint arXiv:2102.09412*'
 # - name: ""
 #   url: ""
 url_pdf: https://arxiv.org/pdf/2111.07973.pdf
-url_code: 
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
