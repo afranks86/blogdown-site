@@ -11,8 +11,8 @@ authors:
 - Alexander Franks
 tags: []
 categories: []
-date: '2021-01-01'
-lastmod: 2021-05-11T11:55:42-07:00
+date: '2022-01-01'
+lastmod: 2022-01-11T11:55:42-07:00
 featured: false
 draft: false
 
@@ -31,7 +31,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2021-05-11T18:58:15.180874Z'
+publishDate: '2022-01-1T18:58:15.180874Z'
 publication_types:
 - '2'
 
