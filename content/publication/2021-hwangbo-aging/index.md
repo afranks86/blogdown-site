@@ -41,5 +41,8 @@ publishDate: '2021-05-11T18:58:14.961749Z'
 publication_types:
 - '2'
 abstract: ''
-publication: '*bioRxiv*'
+publication: '*The Journals of Gerontology: Series A*'
+
+url_pdf: https://academic.oup.com/biomedgerontology/advance-article/doi/10.1093/gerona/glab212/6348872?login=true
 ---
+
