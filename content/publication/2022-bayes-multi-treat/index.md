@@ -45,7 +45,7 @@ effects are driven entirely by the prior specification. We use a so-called trans
 contextualize the effects of more interpretable scientifically motivated prior specifications on the multiple
 effects. We demonstrate our analysis in an example quantifying the effects of gene expression levels on
 mouse obesity
-<center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>' 
+<!-- <center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>'  -->
 publication: '*arXiv preprint arXiv:2102.09412*'
 
 # links:
