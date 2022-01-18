@@ -44,8 +44,8 @@ surprising ways. It is thus essential to understand which aspects of the conclus
 effects are driven entirely by the prior specification. We use a so-called transparent parameterization to
 contextualize the effects of more interpretable scientifically motivated prior specifications on the multiple
 effects. We demonstrate our analysis in an example quantifying the effects of gene expression levels on
-mouse obesity
-<!-- <center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>'  -->
+mouse obesity.'
+
 publication: '*AISTATS (to appear)*'
 
 # links:
