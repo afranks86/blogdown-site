@@ -32,7 +32,7 @@ image:
 projects: []
 publishDate: '2021-05-11T18:58:15.180874Z'
 publication_types:
-- '2'
+- '1'
 
 abstract: '
 In causal estimation problems, the parameter of interest is often only partially identified, implying that
@@ -46,7 +46,7 @@ contextualize the effects of more interpretable scientifically motivated prior s
 effects. We demonstrate our analysis in an example quantifying the effects of gene expression levels on
 mouse obesity
 <!-- <center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>'  -->
-publication: '*arXiv preprint arXiv:2102.09412*'
+publication: '*AISTATS (to appear)*'
 
 # links:
 # - name: ""
