@@ -48,8 +48,18 @@ social:
   link: https://scholar.google.com/citations?user=GXkVYUAAAAAJ&hl=en
 ---
 
+### Bio
+I am an Assistant Professor in the [Department of Statistics and Applied Probability](https://www.pstat.ucsb.edu/) at the University of California, Santa Barbara and am on the executive committee of the [Career Development Network (CDN)](https://academicdatascience.org/cdn) for the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org). My research interets include covariance estimation, sensitivity analysis and causal inference, missing data,  high throughput applications in biology ("omics"), Bayesian statistics and sports.
 
-I am an Assistant Professor in the [Department of Statistics and Applied Probability](https://www.pstat.ucsb.edu/) at the University of California, Santa Barbara. My research interests include covariance estimation, Bayesian inference, sensitivity analysis, causal inference, and missing data.  I'm interested in the analysis of  "omics" data, with a recent focus on proteomics. I also work in sports analytics with a focus on basketball.
+### Research Interests
+**Covariance Estimation.** My work on covariance estimation includes methods  for characterizing variability in large scale covariance matrices across multiple groups [\[JMLR, 2019\]](/publication/2019-shared/) or as a function of continuous covariates [\[Biometrics, 2020\]](/publication/2020-reducing/), as well as the relationship between covariance estimation and undirected graph estimation [\[in review\]](/publication/2021-wang-confounding). I have applied these covariance estimations predominently to applications in biology,  [e.g \[JASA, 2014\]](/publication/2014-covariance/).
 
-I am on the executive committee of the [Career Development Network (CDN)](https://academicdatascience.org/cdn) for the [Academic Data Science Alliance (ADSA)](https://academicdatascience.org).
+**Causal inference and Sensitivity Analysis.**  I am interested interpretable and fleixble methods for assessing sensitivity to untestable assumptions in causal inference [\[JASA, 2019\]](/publication/2019-flexible/) and missing data problems [\[PNAS, 2020\]](/publication/2020-nmar/). Recently, my interest has focused on how we can leverage dependence among multiple treatments [\[in review\]](/publication/2021-zheng-copula/) to help inform sensitivity analyses.  An extension of this work explores partial identification and sensitivity analysis in the Bayesian paradigm [\[ACIC, 2022\]](/publication/2022-bayes-multi-treat/). 
+
+**High-throughput biology.** My applied work is largely is largely focused on to methods for the analysis of transcriptomic and proteomic datasets.  I'm particularly interested in understanding the relationship between mRNA and protein levels as it pertains to the role of post-transcriptional regulation, see e.g. [\[JASA, 2015\]](/publication/2014-covariance/) and [\[PLoS Genetics, 2015\]](/publication/2014-csardi/), and [\[PloS Comp Bio, 2017\]](/publication/2017-post/).
+Currently, I have an [NIH R01 grant](https://reporter.nih.gov/search/ZgqVmNG1fk2ufP_f9mI3Rg/project-details/10378378) to study post-transcriptional regulation in single cells, jointly with [Nikolai Slavov](https://slavovlab.net/) at Northeastern University.
+
+**Sports.** I also work on statistical problems in sports, predominantly in basketball.  My work includes a spatio-temporal analysis of player-tracking data [\[AOAS, 2015\]](/publication/2014-characterizing/) and methods for understanding the reliability and stability of commonly used performance metrics [\[JQAS, 2016\]](/publication/2016-meta/). See our recent review paper on modeling player and team performance in basketball [\[Ann. Rev. of Stats. and App. 2020\]](/publication/2020-modeling/).
+
+
 
