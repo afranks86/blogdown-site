@@ -32,6 +32,28 @@ projects: []
 publishDate: '2021-05-11T18:58:11.653127Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'Transcriptional and post-transcriptional regulation shape tissue-type-specific proteomes, but their
+relative contributions remain contested. Estimates of the factors determining protein levels in human tissues do not distinguish between (i) the factors determining the variability between the abundances of different proteins, i.e., mean-level-variability and, (ii) the factors determining the physiological variability of the same protein across different tissue types, i.e., across-tissues variability.
+We sought to estimate the contribution of transcript levels to these two orthogonal sources of variability, and found that scaled mRNA levels can account for most of the mean-level-variability but
+not necessarily for across-tissues variability. The reliable quantification of the latter estimate is
+limited by substantial measurement noise. However, protein-to-mRNA ratios exhibit substantial
+across-tissues variability that is functionally concerted and reproducible across different datasets,
+suggesting extensive post-transcriptional regulation. These results caution against estimating protein fold-changes from mRNA fold-changes between different cell-types, and highlight the contribution of post-transcriptional regulation to shaping tissue-type-specific proteomes'
 publication: '*PLoS computational biology*'
+
+
+
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://www.biorxiv.org/content/10.1101/020206v5.full.pdf
+url_code: https://github.com/SlavovLab/tissue-ptr
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
 ---

@@ -11,7 +11,7 @@ authors:
 - Kirk Goldsberry
 tags: []
 categories: []
-date: '2015-01-01'
+date: '2015-05-028'
 lastmod: 2021-05-11T11:55:38-07:00
 featured: false
 draft: false
@@ -52,4 +52,16 @@ abstract: Although basketball is a dualistic sport, with all players competing o
   supporting some common understandings of defensive effectiveness, challenging others,
   and opening up many new insights into the defensive elements of basketball.
 publication: '*Annals of Applied Statistics*'
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://arxiv.org/pdf/1405.0231.pdf
+url_code: 
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 ---

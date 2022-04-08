@@ -33,6 +33,20 @@ projects: []
 publishDate: '2021-05-11T18:58:10.790870Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'Building better models of cellular pathways is one of the major challenges of systems biology and functional genomics. There is a need for methods to build on established expert knowledge and reconcile it with results of high-throughput studies. Moreover, the available data sources are heterogeneous and need to be combined in a way specific for the part of the pathway in which they are most informative. Here, we present a compartment specific strategy to integrate edge, node and path data for the refinement of a network hypothesis. Specifically, we use a local-move Gibbs sampler for refining pathway hypotheses from a compendium of heterogeneous data sources, including novel methodology for integrating protein attributes. We demonstrate the utility of this approach in a case study of the pheromone response MAPK pathway in the yeast S. cerevisiae.
+'
 publication: '*The Annals of Applied Statistics*'
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://arxiv.org/pdf/1406.5799.pdf
+url_code: 
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
 ---

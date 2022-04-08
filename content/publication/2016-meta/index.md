@@ -34,6 +34,20 @@ projects: []
 publishDate: '2021-05-11T18:58:12.197165Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'In sports, there is a constant effort to improve metrics which assess player ability, but there has been almost no effort to quantify and compare existing metrics.
+Any individual making a management, coaching, or gambling decision is quickly overwhelmed with hundreds of statistics. We address this problem by proposing a set of
+“meta-metrics” which can be used to identify the metrics that provide the most unique,
+reliable, and useful information for decision-makers. Specifically, we develop methods
+to evalute metrics based on three criteria: 1) stability: does the metric measure the
+same thing over time 2) discrimination: does the metric differentiate between players
+and 3) independence: does the metric provide new information? Our methods are
+easy to implement and widely applicable so they should be of interest to the broader
+sports community. We demonstrate our methods in analyses of both NBA and NHL
+metrics. Our results indicate the most reliable metrics and highlight how they should
+be used by sports analysts. The meta-metrics also provide useful insights about how to
+best construct new metrics which provide independent and reliable information about
+athletes.'
 publication: '*Journal of Quantitative Analysis in Sports*'
+
+url_pdf: https://arxiv.org/pdf/1609.09830.pdf
 ---
