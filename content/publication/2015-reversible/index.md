@@ -41,6 +41,8 @@ projects: []
 publishDate: '2021-05-11T18:58:11.987261Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'Heat causes protein misfolding and aggregation and, in eukaryotic cells, triggers aggregation of proteins and RNA into stress granules. We have carried out extensive proteomic studies to quantify heat-triggered aggregation and subsequent disaggregation in budding yeast, identifying >170 endogenous proteins aggregating within minutes of heat shock in multiple subcellular compartments. We demonstrate that these aggregated proteins are not misfolded and destined for degradation. Stable-isotope labeling reveals that even severely aggregated endogenous proteins are disaggregated without degradation during recovery from shock, contrasting with the rapid degradation observed for many exogenous thermolabile proteins. Although aggregation likely inactivates many cellular proteins, in the case of a heterotrimeric aminoacyl-tRNA synthetase complex, the aggregated proteins remain active with unaltered fidelity. We propose that most heat-induced aggregation of mature proteins reflects the operation of an adaptive, autoregulatory process of functionally significant aggregate assembly and disassembly that aids cellular adaptation to thermal stress'
 publication: '*Cell*'
+
+url_pdf: https://drummondlab.org/assets/pdfs/Wallace2015-ReversibleSpecificActiveAggregatesOfEndogenousProteinsAssembleUponHeatStress.pdf
 ---
