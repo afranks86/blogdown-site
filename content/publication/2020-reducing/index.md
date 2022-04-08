@@ -33,6 +33,6 @@ publication_types:
 abstract: 'We develop an envelope model for joint mean and covariance regression in the large p, small n setting. In contrast to existing envelope methods, which improve mean estimates by incorporating estimates of the covariance structure, we focus on identifying covariance heterogeneity by incorporating information about mean-level differences. We use a Monte Carlo EM algorithm to identify a low-dimensional subspace which explains differences in both means and covariances as a function of covariates, and then use MCMC to estimate the posterior uncertainty conditional on the inferred low-dimensional subspace. We demonstrate the utility of our model on a motivating application on the metabolomics of aging. We also provide R code which can be used to develop and test other generalizations of the response envelope model.'
 publication: '*Biometrics*'
 
-url_pdf: https://arxiv.org/abs/2010.00503
+url_pdf: https://arxiv.org/pdf/2010.00503.pdf
 url_code: https://github.com/afranks86/envelopeR
 ---

@@ -11,8 +11,7 @@ authors:
 - Kirk Goldsberry
 tags: []
 categories: []
-date: '2015-05-028'
-lastmod: 2021-05-11T11:55:38-07:00
+date: '2015-05-28'
 featured: false
 draft: false
 
@@ -30,11 +29,10 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2021-05-11T18:58:10.994716Z'
 publication_types:
 - '2'
 abstract: Although basketball is a dualistic sport, with all players competing on
-  both offense and defense, almost all of the sporttextquoterights conventional metrics
+  both offense and defense, almost all of the sports conventional metrics
   are designed to summarize offensive play. As a result, player valuations are largely
   based on offensive performances and to a much lesser degree on defensive ones. Steals,
   blocks, and defensive rebounds provide only a limited summary of defensive effectiveness,

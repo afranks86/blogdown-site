@@ -57,5 +57,5 @@ abstract: 'We consider data-analysis settings where data are missing not at rand
   10.5061/dryad.d644f).'
 publication: '*Proceedings of the National Academy of Sciences*'
 url_pdf: https://www.pnas.org/content/117/32/19045
-doi: 10.1073/pnas.1815563117
+
 ---
