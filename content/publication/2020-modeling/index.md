@@ -31,6 +31,30 @@ projects: []
 publishDate: '2021-05-11T18:58:14.279330Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'In recent years, analytics has started to revolutionize the game of basketball: quantitative analyses
+of the game inform team strategy, management of player health and fitness, and how teams draft, sign,
+and trade players. In this review, we focus on methods for quantifying and characterizing basketball
+gameplay. At the team level, we discuss methods for characterizing team strategy and performance,
+while at the player level, we take a deep look into a myriad of tools for player evaluation. This includes
+metrics for overall player value, defensive ability, and shot modeling, and methods for understanding
+performance over multiple seasons via player production curves. We conclude with a discussion on the
+future of basketball analytics, and in particular highlight the need for causal inference in sports.'
 publication: '*Annual Review of Statistics and Its Application*'
+
+
+
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://arxiv.org/pdf/2007.10550.pdf
+url_code: 
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+
 ---

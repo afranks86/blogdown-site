@@ -9,7 +9,7 @@ authors:
 - Peter Hoff
 tags: []
 categories: []
-date: '2019-01-01'
+date: '2019-10-22'
 lastmod: 2021-05-11T11:55:39-07:00
 featured: false
 draft: false
@@ -31,6 +31,24 @@ projects: []
 publishDate: '2021-05-11T18:58:12.548165Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 'We develop a model-based method for evaluating heterogeneity among several p×p covariance matrices in the large p, small n setting. This is done by assuming a spiked covariance
+model for each group and sharing information about the space spanned by the group-level
+eigenvectors. We use an empirical Bayes method to identify a low-dimensional subspace which
+explains variation across all groups and use an MCMC algorithm to estimate the posterior
+uncertainty of eigenvectors and eigenvalues on this subspace. The implementation and utility
+of our model is illustrated with analyses of high-dimensional multivariate gene expression.'
+
 publication: '*Journal of Machine Learning Research*'
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://arxiv.org/pdf/1607.03045.pdf
+url_code: https://github.com/afranks86/mgCov
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 ---

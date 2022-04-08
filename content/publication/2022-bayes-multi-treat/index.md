@@ -52,7 +52,7 @@ publication: '*AISTATS (to appear)*'
 # - name: ""
 #   url: ""
 url_pdf: https://arxiv.org/pdf/2111.07973.pdf
-url_code: ''
+url_code: https://github.com/afranks86/multi-treat-inference
 url_dataset: ''
 url_poster: ''
 url_project: ''
