@@ -51,4 +51,6 @@ abstract: Cells respond to their environment by modulating protein levels throug
   regulation and introduce multiple noise-aware approaches essential for proper analysis
   of many biological phenomena.
 publication: '*PLoS Genetics*'
+
+url_pdf: https://www.biorxiv.org/content/10.1101/009472v2.full.pdf
 ---
