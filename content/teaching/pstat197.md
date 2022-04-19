@@ -28,7 +28,7 @@ image:
 #   Uncomment and edit lines below to show custom links.
 links:
 - name: Course site
-  url: https://ucsb-ds-capstone-2021.github.io/welcome.html
+  url: https://ucsb-ds-capstone-2022.github.io/welcome.html
 #  icon_pack: fab
 #  icon: twitter
 
