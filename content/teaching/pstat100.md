@@ -3,7 +3,7 @@
 title: "PSTAT 100: Data Science Concepts and Analysis"
 institution: "Past Courses"
 date: 2019-06-28T00:00:00Z
-summary: ' '
+summary: '(Spring 19, Spring 20) '
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

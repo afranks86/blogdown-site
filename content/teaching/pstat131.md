@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "PSTAT 131: Introduction to Statistical Machine Learning"
 institution: "Past Courses"
-summary: ' '
+summary: '(Fall17, Spring18, Fall18, Fall19)'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

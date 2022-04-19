@@ -3,7 +3,7 @@
 title: "PSTAT 115: Bayesian Data Analysis"
 institution: "Past Courses"
 date: 2019-06-28T00:00:00Z
-summary: ' '
+summary: '(Fall18, Fall19, Fall20, Winter22) '
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
