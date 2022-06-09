@@ -46,12 +46,12 @@ contextualize the effects of more interpretable scientifically motivated prior s
 effects. We demonstrate our analysis in an example quantifying the effects of gene expression levels on
 mouse obesity.'
 
-publication: '*AISTATS (to appear)*'
+publication: '*AISTATS*'
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://arxiv.org/pdf/2111.07973.pdf
+url_pdf: https://proceedings.mlr.press/v151/zheng22a/zheng22a.pdf
 url_code: https://github.com/afranks86/multi-treat-inference
 url_dataset: ''
 url_poster: ''
