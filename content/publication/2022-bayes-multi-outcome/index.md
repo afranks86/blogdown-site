@@ -21,6 +21,7 @@ image:
 projects: []
 publishDate: '2021-05-11T18:58:15.180874Z'
 publication_types: '0'
+
 abstract: We propose an approach for assessing sensitivity to unobserved confounding
   in studies with multiple outcomes. Under a shared confounding assumption, we argue
   that it is often reasonable to use residual dependence amongst outcomes to infer
@@ -33,7 +34,10 @@ abstract: We propose an approach for assessing sensitivity to unobserved confoun
   estimates. Finally, we propose a Bayesian inference strategy for quantifying uncertainty
   and describe a practical sensitivity workflow which we demonstrate in both simulation
   and in a case study using data from the National Health and Nutrition Examination
-  Survey (NHANES). <center><img src="/img/factor_confounding.png" width="80%" /></center>
+  Survey (NHANES).
+
+<center><img src="/img/factor_confounding.png" width="80%" /></center>
+
 publication: '*Preprint*'
 url_pdf: ''
 url_code: ''
