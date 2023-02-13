@@ -38,7 +38,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides: /slides/HarvardBiostat/multi-outcome.html
+url_slides: /slides/factor-sensitivity/multi-outcome.html
 url_code:
 url_pdf:
 url_video:
