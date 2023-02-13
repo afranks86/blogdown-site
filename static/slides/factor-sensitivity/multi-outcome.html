@@ -607,20 +607,25 @@ sample estimates:
 <li><p>Calibrate assumptions about confounding to explore range of causal effects that are plausible</p></li>
 <li><p>Robustness: quantify how “strong” confounding has to be to nullify causal effect estimates</p></li>
 </ul>
+<div class="fragment">
+<ul>
+<li>Well established methods for single outcome analyses</li>
+</ul>
+</div>
 </section>
 <section id="multi-outcome-sensitivity-analysis" class="slide level2">
 <h2>Multi-outcome Sensitivity Analysis</h2>
 <ul>
-<li>Can prior knowledge in the multi-outcome setting be leveraged to strengthen causal conclusions?</li>
+<li>If we measure multiple outcomes, is there prior knowledge that we can leverage to strengthen causal conclusions?</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>What does residual correlation in multi-outcome models mean for potential for confounding?</li>
+<li>What might residual correlation in multi-outcome models mean for potential for confounding?</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li><p>How do results change when we assume a priori that certain outcomes cannot be effected by treatments?</p>
+<li><p>How do results change when we assume a priori that certain outcomes cannot be affected by treatments?</p>
 <ul>
 <li>Null control outcomes (e.g.&nbsp;alcohol consumption should not increase mercury levels)</li>
 </ul></li>
@@ -756,7 +761,7 @@ sample estimates:
 \end{align}\]</span></p>
 <div class="fragment">
 <ul>
-<li>This SEM implies the factor structured residuals, <span class="math inline">\(Cov(Y|T, X) = \Gamma\Gamma' + \Lambda\)</span></li>
+<li>This SEM is compatible the factor structured residuals, <span class="math inline">\(Cov(Y|T, X) = \Gamma\Gamma' + \Lambda\)</span></li>
 </ul>
 </div>
 </section>
@@ -786,7 +791,7 @@ sample estimates:
 \end{align}\]</span></p>
 <ul>
 <li><p><span class="math inline">\(\rho\)</span> is the partial correlation vector between <span class="math inline">\(T\)</span> and <span class="math inline">\(U\)</span></p></li>
-<li><p><span class="math inline">\(0 \leq R^2_{T \sim U |X}:= \frac{||\rho||^2_2}{\sigma^2_{t\mid x}} &lt; 1\)</span> is the squared norm of the partial correlation between T and U given <span class="math inline">\(X\)</span></p></li>
+<li><p>Define <span class="math inline">\(0 \leq R^2_{T \sim U |X}:= \frac{||\rho||^2_2}{\sigma^2_{t\mid x}} &lt; 1\)</span> to be the squared norm of the partial correlation between T and U given <span class="math inline">\(X\)</span></p></li>
 </ul>
 </section>
 <section id="multi-outcome-assumptions" class="slide level2">
@@ -997,8 +1002,8 @@ sample estimates:
 <li><p><span style="color:#C43424">Ignorance about the bias is smallest when <span class="math inline">\(\Gamma_j\)</span> is close to the span of <span class="math inline">\(\Gamma_{\mathcal{C}}\)</span> </span></p></li>
 </ul>
 </section>
-<section id="robustness-1" class="slide level2">
-<h2>Robustness</h2>
+<section id="robustness-under-factor-confounding" class="slide level2">
+<h2>Robustness under Factor Confounding</h2>
 <ul>
 <li><span class="math inline">\(RV^\Gamma_j\)</span> smallest value of <span class="math inline">\(R^2_{T\sim U |X}\)</span> needed to nullify the effect for outcome <span class="math inline">\(j\)</span> under factor confounding</li>
 </ul>
