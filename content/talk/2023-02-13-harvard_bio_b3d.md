@@ -2,9 +2,9 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Sensitivity to Unobserved Confounding in Studies with Factor-structured Outcomes"
-event: "Harvard Biostatistics B3D"
+event: ""
 event_url: 
-location: remote
+location: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

@@ -49,7 +49,7 @@ approach making use of the Gaussian copula, and establish conditions under which
 be bounded. We also describe approaches for reasoning about effects, including calibrating sensitivity
 parameters, quantifying robustness of effect estimates, and selecting models which are most consistent
 with prior hypotheses.
-<center><img src="/img/confounder_bias.gif" alt="drawing" width="60%" /></center>' 
+<center><img src="/img/confounder_bias.gif" alt="drawing" width="80%" /></center>' 
 publication: '*arXiv preprint arXiv:2102.09412*'
 
 # links:
