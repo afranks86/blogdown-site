@@ -43,7 +43,7 @@ approaches and propose a new method, which combines the strengths of these two a
 We prove the consistency and convergence rate for the PCA-based method and use these results
 to provide guidance about when to use each method. We demonstrate the effectiveness of our
 methodology using both simulations and in two real-world applications.'
-publication: '*arXiv preprint arXiv:2105.06600*'
+publication: 'Journal of Multivariate Analysis'
 
 
 
