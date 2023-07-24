@@ -10,7 +10,7 @@ authors:
 - Alexander Franks
 tags: []
 categories: []
-date: '2021-01-01'
+date: '2023-01-01'
 lastmod: 2021-05-11T11:55:42-07:00
 featured: false
 draft: false
@@ -43,7 +43,7 @@ approaches and propose a new method, which combines the strengths of these two a
 We prove the consistency and convergence rate for the PCA-based method and use these results
 to provide guidance about when to use each method. We demonstrate the effectiveness of our
 methodology using both simulations and in two real-world applications.'
-publication: 'Journal of Multivariate Analysis'
+publication: '*Journal of Multivariate Analysis*'
 
 
 
