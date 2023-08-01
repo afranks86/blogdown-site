@@ -23,3 +23,7 @@
   url = "/files/Franks_CV.pdf"
   weight = 60
 
+[[main]]
+  name = "Presentations"
+  url = "/talk"
+  weight = 70
