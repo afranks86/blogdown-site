@@ -8,9 +8,9 @@ location:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-02-13"
-date_end: 
-all_day: "2023-02-13"
+# date: "2023-02-13"
+# date_end: 
+# all_day: "2023-02-13"
 
 # Schedule page publish date (NOT talk date).
 publishDate: 
