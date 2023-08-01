@@ -40,6 +40,6 @@ image:
 # Optional filename of your slides within your talk's folder or a URL.
 url_slides: /slides/factor-sensitivity/multi-outcome.html
 url_code:
-url_pdf:
+url_pdf: /slides/factor-sensitivity/multi-outcome.pdf
 url_video:
 ---
