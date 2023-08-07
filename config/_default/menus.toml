@@ -24,6 +24,6 @@
   weight = 60
 
 [[main]]
-  name = "Presentations"
-  url = "/presentations"
+  name = "Talks"
+  url = "/talks"
   weight = 70
