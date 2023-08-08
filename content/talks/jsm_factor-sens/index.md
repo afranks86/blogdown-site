@@ -33,7 +33,7 @@ featured: false
 links:
 url_slides: 
 url_code:
-url_pdf: /slides/factor-sens-jsm23.pdf
+url_pdf: /slides/jsm_factor_sens_slides.pdf
 
 
 ---
