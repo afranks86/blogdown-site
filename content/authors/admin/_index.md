@@ -23,7 +23,7 @@ education:
     institution: Harvard University
     year: 2015
   - course: Sc.M. in Applied Mathematics
-    institution: Brown Unniversity
+    institution: Brown University
     year: 2010
   - course: Sc.B. in Computer Science and Applied Mathematics
     institution: Brown University
