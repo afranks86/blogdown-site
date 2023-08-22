@@ -11,7 +11,7 @@ summary: 'Invited talk on "Sensitivity to Unobserved Confounding with Factor Str
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: "13 Feb 2023"
 # date_end: 
-# all_day: 
+all_day: true
 type: talk
 
 # Is this a featured talk? (true/false)
