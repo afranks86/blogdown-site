@@ -1,11 +1,12 @@
 ---
 title: "Sensitivity to Unobserved Confounding in Studies with Factor-structured Outcomes"
 author: "Alexander Franks"
-date: "Februay 13, 2023"
+date: "September 28, 2023"
 format: 
   revealjs:
     slide-number: true
     theme: [default, ucsb.scss]
+    html-math-method: mathjax
 bibliography: references.bib
 title-slide-attributes: 
   data-background-image: 2-color-seal.gif
@@ -32,6 +33,17 @@ title-slide-attributes:
 ```{r}
 library(tidyverse)
 ```
+
+### Slides and Paper
+
+- Slides: [afranks.com/talks](afranks.com/talks)
+
+- *Sensitivity to Unobserved Confounding in Studies with Factor-structured Outcomes*, (JASA, 2023)
+[https://arxiv.org/abs/2208.06552](https://arxiv.org/abs/2208.06552)
+
+- Joint work with Jiajing Zheng (formerly UCSB), Jiaxi Wu (UCSB) and Alex D'Amour (Google)
+
+---
 
 ### Causal Inference From Observational Data
 
@@ -152,17 +164,21 @@ Residual correlation might be indicative of confounding bias
 
 - Robustness: quantify how "strong" confounding has to be to nullify causal effect estimates
 
+. . .
+
+- Well established methods for single outcome analyses
+
 ## Multi-outcome Sensitivity Analysis
 
-- Can prior knowledge in the multi-outcome setting be leveraged to strengthen causal conclusions?
+- If we measure multiple outcomes, is there prior knowledge that we can leverage to strengthen causal conclusions?
 
 . . .
 
-- What does residual correlation in multi-outcome models mean for potential for confounding?
+- What might residual correlation in multi-outcome models mean for potential for confounding?
 
 . . .
 
-- How do results change when we assume a priori that certain outcomes cannot be effected by treatments?
+- How do results change when we assume a priori that certain outcomes cannot be affected by treatments?
   
   + Null control outcomes (e.g. alcohol consumption should not increase mercury levels)
 
@@ -196,13 +212,34 @@ $$\text{Bias}_{t_1,t_2}^2
         \right)R^2_{Y \sim U | T, X}$$
 :::
 
-. . .
+## Single-outcome Sensitivity Analysis
+
+:::{.callout-note icon=false}
+## Result [@cinelli2020making]
+Assume the outcome is linear in the treatment and confounders (no interactions). Then the squared omitted variable bias for the PATE is
+$$\text{Bias}_{t_1,t_2}^2 
+        \, \leq \, 
+        \frac{(t_1-t_2)^2}{\sigma_{t\mid x}^2} {\color{#C43424}\left(\frac{R^2_{T\sim U|X}}{1 - R^2_{T\sim U|X}}
+        \right)}R^2_{Y \sim U | T, X}$$
+:::
+
+- <span style="color:#C43424">$R^2_{T\sim U|X}$</span>: partial fraction of treatment variance explained by confounders (given observed covariates)
+
+
+## Single-outcome Sensitivity Analysis
+
+:::{.callout-note icon=false}
+## Result [@cinelli2020making]
+Assume the outcome is linear in the treatment and confounders (no interactions). Then the squared omitted variable bias for the PATE is
+$$\text{Bias}_{t_1,t_2}^2 
+        \, \leq \, 
+        \frac{(t_1-t_2)^2}{\sigma_{t\mid x}^2} \left(\frac{R^2_{T\sim U|X}}{1 - R^2_{T\sim U|X}}
+        \right){\color{#C43424}R^2_{Y \sim U | T, X}}$$
+:::
 
 - $R^2_{T\sim U|X}$: partial fraction of treatment variance explained by confounders (given observed covariates)
 
-. . .
-
-- $R^2_{Y\sim U|T,X}$: partial fraction of outcome variance explained by confounders (given observed covariates and treatment)
+- <span style="color:#C43424">$R^2_{Y\sim U|T,X}$</span>: partial fraction of outcome variance explained by confounders (given observed covariates and treatment)
 
 ## Robustness
 
@@ -281,7 +318,7 @@ $$\begin{align}
 
 . . .
 
-- This SEM implies the factor structured residuals, $Cov(Y|T, X) = \Gamma\Gamma' + \Lambda$
+- This SEM is compatible the factor structured residuals, $Cov(Y|T, X) = \Gamma\Gamma' + \Lambda$
 
 
 
@@ -311,7 +348,7 @@ $$\begin{align}
 
 - $\rho$ is the partial correlation vector between $T$ and $U$
 
-- $0 \leq R^2_{T \sim U |X}:= \frac{||\rho||^2_2}{\sigma^2_{t\mid x}} < 1$ is the squared norm of the partial correlation between T and U given $X$
+- Define $0 \leq R^2_{T \sim U |X}:= \frac{||\rho||^2_2}{\sigma^2_{t\mid x}} < 1$ to be the squared norm of the partial correlation between T and U given $X$
 
 
 ## Multi-Outcome Assumptions
@@ -353,7 +390,7 @@ Given the structural equation model, sensitivity specification and given assumpt
 $$\text{Bias}_{j}^2 
         \, \leq \, 
         \frac{(t_1-t_2)^2}{\sigma_{t\mid x}^2} \left(\frac{R^2_{T\sim U|X}}{1 - R^2_{T\sim U|X}}
-        \right)\color{#C43424}{ \parallel \Gamma_j\parallel_2^2}$$
+        \right){\color{#C43424} \parallel \Gamma_j\parallel_2^2}$$
 :::
 
 - <span style="color:#C43424">The bound on the bias for outcome $j$ is proportional to the norm of the factor loadings for that outcome</span>
@@ -367,7 +404,7 @@ $$\text{Bias}_{j}^2
 Given the structural equation model, sensitivity specification and given assumptions, the squared omitted variable bias for the PATE of outcome $Y_j$ is bounded by
 $$\text{Bias}_{j}^2 
         \, \leq \, 
-        \frac{(t_1-t_2)^2}{\sigma_{t\mid x}^2} \color{#C43424}{\left(\frac{R^2_{T\sim U|X}}{1 - R^2_{T\sim U|X}}
+        \frac{(t_1-t_2)^2}{\sigma_{t\mid x}^2} {\color{#C43424}\left(\frac{R^2_{T\sim U|X}}{1 - R^2_{T\sim U|X}}
         \right)} \parallel \Gamma_j\parallel_2^2$$
 :::
 
@@ -375,7 +412,20 @@ $$\text{Bias}_{j}^2
 
 - <span style="color:#C43424">A single sensitivity parameter, $\rsqtx$, shared across all outcomes</span>
 
+---
 
+### Reparametrizing $R^2_{T \sim U | X}$ for binary treatments
+
+- $R^2_{T \sim U | X}$ is unnatural for binary treatments
+
+- $\Lambda$-parameterization $\leftrightarrow$ $R^2_{T \sim U | X}$-parameterization
+
+. . .
+
+Fix a $\Lambda_\alpha$ such that
+$$Pr\left(\Lambda_\alpha^{-1} \leq \frac{e_0(X, U)/(1-e_0(X, U))}{e(X)/(1-e(X))}\leq \Lambda_\alpha\right)=1-\alpha$$ 
+
+- Related to the marginal sensitivity model [@tan2006distributional]
 
 ## Null Control Outcomes
 
@@ -422,10 +472,32 @@ Assume the previous structural equation model and sensitivity specification.  Th
 \end{equation}
 :::
 
+## Null Control Outcomes {visibility="uncounted"}
 
-- If $R^2_{T \sim U | X}=R^2_{min}$ then the bias is identified for all outcomes
+::: {.callout-note icon=false}
+## Theorem (Bias with Null Control Outcomes)
+Assume the previous structural equation model and sensitivity specification.  Then the squared omitted variable bias for the PATE of outcome $Y_j$ is bounded by
 
-- Ignorance about the bias is smallest when $\Gamma_j$ is close to the span of $\Gamma_{\mathcal{C}}$ 
+\begin{equation}
+    \text{Bias}_j \in 
+    \left[{\color{#C43424}\Gamma_j \Gamma_{\mathcal{C}}^{\dagger} \teNaiveNull}
+    \; \pm \;
+    \parallel
+    \Gamma_j P_{\Gamma_{\mathcal{C}}}^{\perp} 
+    \parallel_2
+    \sqrt{
+    \frac{1}{\sigma_{t\mid x}^2}\left(
+    \frac{R^2_{T \sim U | X}}{1 - R^2_{T \sim U | X}} - 
+    \frac{R^2_{min}}{1 - R^2_{min}}
+    \right)}
+\right],
+\end{equation}
+:::
+
+
+- <span style="color:#C43424">$\Gamma_j\Gamma_{\mathcal{C}}^{\dagger}\check \tau_{\mathcal{C}}$</span> is a (partial) bias correction for outcome $j$
+
+ 
 
 ## Null Control Outcomes {visibility="uncounted"}
 
@@ -450,9 +522,7 @@ Assume the previous structural equation model and sensitivity specification.  Th
 :::
 
 
-- <span style="color:#C43424">If $R^2_{T \sim U | X}=R^2_{min}$ then the bias is identified for all outcomes</span>
-
-- Ignorance about the bias is smallest when $\Gamma_j$ is close to the span of $\Gamma_{\mathcal{C}}$ 
+- If <span style="color:#C43424">$R^2_{T \sim U | X}=R^2_{min}$</span> then the bias is identified for all outcomes
 
 ## Null Control Outcomes {visibility="uncounted"}
 
@@ -464,7 +534,7 @@ Assume the previous structural equation model and sensitivity specification.  Th
     \text{Bias}_j \in 
     \left[\Gamma_j \Gamma_{\mathcal{C}}^{\dagger} \teNaiveNull
     \; \pm \;
-    \color{#C43424}{\parallel
+    {\color{#C43424}\parallel
     \Gamma_j P_{\Gamma_{\mathcal{C}}}^{\perp} 
     \parallel_2}
     \sqrt{
@@ -476,12 +546,11 @@ Assume the previous structural equation model and sensitivity specification.  Th
 \end{equation}
 :::
 
+- Ignorance about the bias is smallest when $\Gamma_j$ is close to the span of $\Gamma_{\mathcal{C}}$, that is, when <span style="color:#C43424">$\parallel
+    \Gamma_j P_{\Gamma_{\mathcal{C}}}^{\perp} 
+    \parallel_2$</span> is small
 
-- If $R^2_{T \sim U | X}=R^2_{min}$ then the bias is identified for all outcomes
-
-- <span style="color:#C43424">Ignorance about the bias is smallest when $\Gamma_j$ is close to the span of $\Gamma_{\mathcal{C}}$ </span>
-
-## Robustness
+## Robustness under Factor Confounding
 
 - $RV^\Gamma_j$ smallest value of $R^2_{T\sim U |X}$ needed to nullify the effect for outcome $j$ under factor confounding
 
@@ -553,18 +622,29 @@ drinking <- X[, 1]
 X <- X[, -1]
 ```
 
-## Aside: reparametrizing $R^2_{T \sim U | X}$
+## The effects of light drinking {.smaller}
 
-- $R^2_{T \sim U | X}$ is unnatural for binary treatments
-
-- $\Lambda$-parameterization $\leftrightarrow$ $R^2_{T \sim U | X}$-parameterization
+Model: 
+\begin{align}
+Y &\sim N(\tau T + \alpha 'X, \Gamma\Gamma' + \Lambda)
+\end{align}
 
 . . .
 
-Fix a $\Lambda_\alpha$ such that
-$$Pr\left(\Lambda_\alpha^{-1} \leq \frac{e_0(X, U)/(1-e_0(X, U))}{e(X)/(1-e(X))}\leq \Lambda_\alpha\right)=1-\alpha$$ 
+- $E[Y| T, X, U] = \tau T + \alpha 'X + \Gamma'\Sigma^{-1/2}_{u|t}U$
 
-- Related to the marginal sensitivity model [@tan2006distributional]
+- Residuals are approximately Gaussian
+
+- Fit a multivariate Bayesian linear regression with factor structured residuals on all outcomes
+
+. . .
+
+- Need to choose rank of $\Gamma$, we use PSIS-LOO [@vehtari2017practical]
+
+. . .
+
+- Consider posterior distribution of $\tau$ under different assumptions about $R^2_{T\sim U|X}$ and null controls
+
 
 ## Benchmark Values
 
@@ -635,7 +715,7 @@ $$Pr\left(\Lambda_\alpha^{-1} \leq \frac{e_0(X, U)/(1-e_0(X, U))}{e(X)/(1-e(X))}
 
 - Alex D'Amour (bottom, Google Research)
 
-**Preprint:** Sensitivity to Unobserved Confounding in Studies with Factor-structured Outcomes
+Sensitivity to Unobserved Confounding in Studies with Factor-structured Outcomes
 [https://arxiv.org/abs/2208.06552](https://arxiv.org/abs/2208.06552)
 :::
 ::::
