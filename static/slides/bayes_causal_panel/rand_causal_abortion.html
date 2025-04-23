@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="rand_causal_abortion_files/libs/clipboard/clipboard.min.js"></script>
+<script src="rand_causal_abortion_files/libs/quarto-html/tabby.min.js"></script>
+<script src="rand_causal_abortion_files/libs/quarto-html/popper.min.js"></script>
+<script src="rand_causal_abortion_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="rand_causal_abortion_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="rand_causal_abortion_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="rand_causal_abortion_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.40">
+
+  <meta name="author" content="Alexander Franks">
+  <meta name="dcterms.date" content="2025-04-23">
+  <title>Quantifying Heterogeneity in the Causal Impact of Abortion Restrictions</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="rand_causal_abortion_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="rand_causal_abortion_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="rand_causal_abortion_files/libs/revealjs/dist/theme/quarto-e20b77cc13564c0cedea100398daf9dd.css">
+  <link href="rand_causal_abortion_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="rand_causal_abortion_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="rand_causal_abortion_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="rand_causal_abortion_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="2-color-seal.gif" data-background-position="80% 70%" data-background-size="20%" class="quarto-title-block center">
+  <h1 class="title">Quantifying Heterogeneity in the Causal Impact of Abortion Restrictions</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Alexander Franks 
+</div>
+        <p class="quarto-title-affiliation">
+            UC Santa Barbara
+          </p>
+    </div>
+</div>
+
+  <p class="date">2025-04-23</p>
+</section>
+<section id="research-team" class="slide level2 smaller">
+<h2>Research Team</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="figs/elizabeth_stuart.png" style="width:35.0%"><br>
+<a href="https://www.biostat.jhsph.edu/~estuart/">Elizabeth Stuart</a><br>
+Statistician, Hopkins</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="figs/avi_feller.png" style="width:35.0%"><br>
+<a href="https://www.avifeller.com/">Avi Feller</a><br>
+Statistician, UC Berkeley</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="figs/alison_gemmill.jpg" style="width:35.0%"><br>
+<a href="https://publichealth.jhu.edu/faculty/3843/alison-gemmill">Alison Gemill</a><br>
+Demographer, Hopkins</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="figs/suzanne_bell.png" style="width:35.0%"><br>
+<a href="https://publichealth.jhu.edu/faculty/3714/suzanne-bell">Suzanne Bell</a><br>
+Demographer, Hopkins</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="figs/david_arbour.png" style="width:35.0%"><br>
+<a href="https://research.adobe.com/person/david-arbour/">David Arbour</a><br>
+Statistician, Adobe</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="figs/eli_ben_michael.png" style="width:35.0%"><br>
+<a href="https://ebenmichael.github.io/">Eli Ben-Michael</a><br>
+Statistician, Carnegie Mellon</p>
+</div></div>
+</section>
+<section id="section" class="slide level2 white-text" data-background-image="figs/texas_sb8.png" data-background-size="cover">
+<h2></h2>
+<div class="r-stretch">
+<div style="position: absolute; right: -40px; top: 5%; color: white;">
+<p>Texas Senate Bill 8 <br> Effectively bans abortion <br> Sept.&nbsp;1, 2021</p>
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2 white-text" data-background-image="figs/roe_overturned.png" data-background-size="cover">
+<h2></h2>
+<div class="r-stretch">
+<div style="position: absolute; right: -20px; top: 2%; color: white;">
+<p><em>Roe v. Wade</em> overturned <br> June 24, 2022</p>
+</div>
+</div>
+</section>
+<section id="abortion-bans-across-the-us" class="slide level2">
+<h2>Abortion Bans Across the US</h2>
+
+<img data-src="figs/abortion_map.png" class="r-stretch"></section>
+<section id="us-infant-mortality-rates" class="slide level2">
+<h2>US Infant Mortality Rates</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="figs/mortality_rates_over_time.png"></p>
+</div><div class="column" style="width:50%;">
+<p><br> <img data-src="figs/infant_mortality_2022.png"></p>
+</div></div>
+<center>
+Source: Washington Post, August 18, 2022
+</center>
+</section>
+<section id="early-evidence-on-impacts" class="slide level2">
+<h2>Early Evidence on Impacts</h2>
+<ul>
+<li><p>States with abortion bans experienced an average 2.3% increase in births in first half of 2023 <span class="citation" data-cites="dench2024effects">(<a href="#/thank-you" role="doc-biblioref" onclick="">Dench, Pineda-Torres, and Myers 2024</a>)</span></p></li>
+<li><p>By race/ethnicity: greater impact among non-Hispanic Black and Hispanic individuals <span class="citation" data-cites="dench2024effects caraher2024abortion">(<a href="#/thank-you" role="doc-biblioref" onclick="">Dench, Pineda-Torres, and Myers 2024</a>; <a href="#/thank-you" role="doc-biblioref" onclick="">Caraher 2024</a>)</span> and greater impact among 20-24-year-olds <span class="citation" data-cites="dench2024effects">(<a href="#/thank-you" role="doc-biblioref" onclick="">Dench, Pineda-Torres, and Myers 2024</a>)</span></p></li>
+<li><p>~13% increase in infant deaths; 8% increase in the infant mortality rate <span class="citation" data-cites="gemmill2024texas_infant">(<a href="#/thank-you" role="doc-biblioref" onclick="">Gemmill et al. 2024</a>)</span></p></li>
+</ul>
+<!-- - Only one prior study evaluated race/ethnicity group estimates of infant mortality in Texas -->
+<!-- <center>![](figs/early_evidence_fertility.png){width=70%}</center> -->
+<!-- ## Impacts on Infant Mortality
+
+![](figs/jama_header.png)
+
+::: {.columns}
+::: {.column width="100%"}
+
+:::
+::: -->
+<!-- ## Heterogeneous Impacts of Abortion Bans? {.smaller}
+
+- Differences in pre-Dobbs abortion rates
+
+- Disparities in ability to overcome barriers to abortion
+
+- State-specific characteristics -->
+</section>
+<section id="study-objectives" class="slide level2">
+<h2>Study Objectives</h2>
+<ul>
+<li><p>To estimate sociodemographic variation in the impact of abortion bans on subnational <strong>birth rates</strong> in the US through the end of 2023</p>
+<ul>
+<li>By age, race/ethnicity, marital status, educational attainment, insurance type</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>To estimate variation in the impact of abortion bans on subnational <strong>infant mortality</strong> in the US through the end of 2023
+<ul>
+<li>By race/ethnicity, timing of death, cause of death</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="fertility-trends" class="slide level2">
+<h2>Fertility Trends</h2>
+<!-- ![](figs/fertility_trends.png) -->
+
+<img data-src="rand_causal_abortion_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<section id="infant-mortality-trends" class="slide level2">
+<h2>Infant Mortality Trends</h2>
+
+<!-- ![](figs/infant_mortality_trends.png) -->
+<img data-src="rand_causal_abortion_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="overall-analytic-approach" class="slide level2 smaller">
+<h2>Overall Analytic Approach</h2>
+<ul>
+<li>Today: focus methods discussion on infant mortality data</li>
+<li>Models for the fertility data are very similar</li>
+<li>Bayesian panel data approach</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Poisson latent factor model
+<ul>
+<li>Fertility: model bimonthly number of births with population offset</li>
+<li>Infant mortality: model biannual number of deaths with live birth offset</li>
+</ul></li>
+<li>Model state-by-subgroup-specific impacts separately by characteristic</li>
+<li>States without bans and pre-exposure outcomes in all states inform counterfactual</li>
+</ul>
+</div>
+</section>
+<section id="infant-mortality-approach" class="slide level2 smaller">
+<h2>Infant Mortality Approach</h2>
+<ul>
+<li>Outcome: infant mortality rate (deaths per 1,000 live births)</li>
+<li>Exposure: 6-week or complete abortion ban (14 states<sup>1</sup>), staggered adoption</li>
+<li>Pre-policy period: January 2012 through ~December 2022</li>
+<li>Treated period: ~January 2023 through December 2023</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Subgroups
+<ul>
+<li>Race/ethnicity: non-Hispanic White, non-Hispanic Black, Hispanic, and Other</li>
+<li>Timing: neonatal (&lt;28 days), non-neonatal</li>
+<li>Cause of death: congenital, non-congenital</li>
+</ul></li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>*States include Alabama, Arkansas, Georgia, Idaho, Kentucky, Louisiana, Mississippi, Missouri, Oklahoma, South Dakota, Tennessee, Texas, West Virginia, Wisconsin</p></li></ol></aside></section>
+<section id="panel-data" class="slide level2">
+<h2>Panel Data</h2>
+<ul>
+<li>Panel with <span class="math inline">\(n\)</span> states and <span class="math inline">\(T\)</span> time periods</li>
+<li>Potential outcomes <span class="math inline">\(Y_{it}(0)\)</span>, <span class="math inline">\(Y_{it}(1)\)</span> and a binary exposure indicator <span class="math inline">\(W_{it} \in \{0,1\}\)</span></li>
+<li>We observe for each unit the pair <span class="math inline">\(Y_i, W_i\)</span> where <span class="math inline">\(Y_{it} \equiv Y_{it}(W_{it}) = \begin{cases}
+Y_{it}(0) &amp; \text{if } W_{it} = 0\\
+Y_{it}(1) &amp; \text{if } W_{it} = 1
+\end{cases}\)</span></li>
+</ul>
+</section>
+<section id="causal-inference-for-panel-data" class="slide level2 smaller">
+<h2>Causal Inference for Panel Data</h2>
+<p>Assumptions:</p>
+<ul>
+<li><p>Well-defined exposure: {any complete or 6-week abortion ban} vs {no ban}</p></li>
+<li><p>No anticipation: no effect of abortion restrictions prior to exposure</p></li>
+<li><p>No spillovers across states: outcomes only depend on own state’s policy</p></li>
+</ul>
+<div class="fragment">
+<p><img data-src="figs/causal_panel_data_diagram.png"></p>
+</div>
+</section>
+<section id="causal-inference-for-panel-data-1" class="slide level2">
+<h2>Causal Inference for Panel Data</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Some common strategies:</p>
+<ul>
+<li>Interrupted Time Series (horizontal)</li>
+<li>Synthetic Control Methods and Factor Models (vertical)</li>
+<li>Differences in Differences(DID) and Two-Way-Fixed-Effects (TWFE)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<p><img data-src="figs/causal_panel_diagram_annotated.png"></p>
+<p><br></p>
+</div></div>
+<!-- ## Gap Plot - Texas
+
+![](figs/gap_plot_texas.png) -->
+</section>
+<section id="challenges-with-infant-death-data" class="slide level2">
+<h2>Challenges with Infant Death Data</h2>
+<ul>
+<li>Infant death counts are small and discrete</li>
+<li>Missing data: CDC Wonder excludes counts between 1 and 9
+<ul>
+<li>Implications for level of temporal aggregation</li>
+</ul></li>
+<li>States and subgroups vary in size and mortality rates</li>
+<li>Staggered Adoptions
+<ul>
+<li>Bans were imposed at different times</li>
+</ul></li>
+</ul>
+</section>
+<section id="temporal-aggregation" class="slide level2">
+<h2>Temporal Aggregation</h2>
+<ul>
+<li>Missingness → CDC Wonder suppresses counts 1, …, 9 (but not 0!)
+<ul>
+<li>e.g., annual → no missingness; daily → high missingness</li>
+<li>Later: imputation approach</li>
+</ul></li>
+<li>Noise → noise for (avg) annual counts ≪ (avg) monthly counts <span class="citation" data-cites="sun2024temporal">(see <a href="#/thank-you" role="doc-biblioref" onclick="">Sun, Ben-Michael, and Feller 2024</a>)</span>
+<ul>
+<li>Further complicated by seasonality</li>
+</ul></li>
+<li>Fertility → 2 month intervals (e.g., Jan-Feb 2023)</li>
+<li>Mortality → 6 month intervals (e.g., Jan-June 2023)</li>
+</ul>
+</section>
+<section id="subgroup-inference" class="slide level2">
+<h2>Subgroup Inference</h2>
+<ul>
+<li><p>Summing infant deaths over subroups yields total infant deaths</p></li>
+<li><p>Inferred total infant mortality rates by differ depending on which subgroups are considered</p></li>
+<li><p>Better to estimate the total effect by estimating the subgroup effects and summing or modeling the total effect directly?</p></li>
+</ul>
+</section>
+<section id="state-size-and-sampling-variance" class="slide level2">
+<h2>State Size and Sampling Variance</h2>
+
+<img data-src="rand_causal_abortion_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="subgroup-size-and-variability" class="slide level2">
+<h2>Subgroup Size and Variability</h2>
+
+<img data-src="rand_causal_abortion_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>In these states population white ≈ 5-15x population black</p>
+</section>
+<section id="implications" class="slide level2">
+<h2>Implications</h2>
+<ul>
+<li><p>Pre-treatment balance should depend on state and subgroup size</p></li>
+<li><p>Avoid overfitting to noise when groups are small</p></li>
+<li><p>The difference between realized and counterfactual infant deaths, <span class="math inline">\(Y_{it}(1) - Y_{it}(0)\)</span>, will be more variable for smaller states and subgroups</p></li>
+<li><p>Suggests a need to regularize causal effect estimates</p></li>
+<li><p>Want to encourage estimated infant mortality rates to be similar for the same state or same subgroup, while still allowing for the possibility of differences</p></li>
+</ul>
+</section>
+<section id="a-probabilistic-bayesian-model" class="slide level2">
+<h2>A Probabilistic Bayesian Model</h2>
+<ul>
+<li>Explicitly incorporate a missing data model</li>
+<li>Staggered adoption accounted for in the likelihood</li>
+<li>Count data modeled via Poisson with offset based on state/group size</li>
+<li>Hierarchical prior stabilize treatment effect estimates and partially pool effects by state and category</li>
+<li>Uncertainty quantification for “free”</li>
+</ul>
+</section>
+<section id="panel-model-for-infant-deaths" class="slide level2 smaller">
+<h2>Panel Model for Infant Deaths</h2>
+<p><span class="math display">\[
+\begin{align}
+Y_{ijt}(1) &amp;\sim \text{Poisson}(\tau_{ijt} \cdot \rho_{ijt} \cdot B_{ijt})\\
+Y_{ijt}(0) &amp;\sim \text{Poisson}(\rho_{ijt} \cdot B_{ijt})
+\end{align}
+\]</span> for unit <span class="math inline">\(i\)</span>, subgroup <span class="math inline">\(j\)</span>, time <span class="math inline">\(t\)</span></p>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(B_{ijt}\)</span> is births (in thousands)
+<ul>
+<li>Scales mortality rate to account for variability in state size</li>
+</ul></li>
+<li><span class="math inline">\(\rho_{ijt}\)</span> is the infant mortality rate <strong>without</strong> bans</li>
+<li><span class="math inline">\(\tau_{ijt}\rho_{ijt}\)</span> is the infant mortality rate <strong>with</strong> bans</li>
+<li><span class="math inline">\(\tau_{ijt}\)</span> is the multiplicate change in infant mortality rate due to bans</li>
+</ul>
+</div>
+</section>
+<section id="poisson-latent-factor-model" class="slide level2 smaller">
+<h2>Poisson Latent Factor Model</h2>
+<p>We assume the infant mortality rate in the “no ban” condition can be expressed as</p>
+<p><span class="math display">\[\rho_{ijt} = \alpha_{ij}^{\text{state}} \cdot \alpha_{jt}^{\text{time}} \cdot \left(\sum_{k=1}^K \lambda_{ijk}\eta_{jkt}\right),\]</span></p>
+<ul>
+<li><span class="math inline">\(\alpha_{ij}^{\text{state}}\)</span> and <span class="math inline">\(\alpha_{jt}^{\text{time}}\)</span> are state and time-specific intercept</li>
+<li><span class="math inline">\(\eta_{jkt} \in \mathbb{R}^+\)</span> is the <span class="math inline">\(k\)</span>th latent factor at time t, common to all states but unique to subcategory j</li>
+<li><span class="math inline">\(\lambda_{ij.} \sim \text{Dirichlet}\)</span> are the factor loadings for state i and category j</li>
+<li>Model selection problem: choosing <span class="math inline">\(K\)</span> (rank)</li>
+</ul>
+</section>
+<section id="hierarchical-prior-on-causal-effects" class="slide level2">
+<h2>Hierarchical Prior on Causal Effects</h2>
+<p>Partially pool the exposure parameters <span class="math inline">\(\tau_{ijt}\)</span> across states and across subcategories, with state and subcategory prior distributions centered at zero:</p>
+<p><span class="math display">\[
+\begin{align}
+\log(\tau_{ijt}) &amp;\sim N\left(\beta_{ij}^{\text{state,sub}}, \sigma_\tau\right)\\
+\beta_{ij}^{\text{state,sub}} &amp;\sim N\left(\beta_i^{\text{state}} + \beta_j^{\text{sub}}, \sigma_\beta\right)\\
+\beta_i^{\text{state}} &amp;\sim N\left(0, \sigma_{\text{state}}\right)\\
+\beta_j^{\text{sub}} &amp;\sim N\left(0, \sigma_{\text{sub}}\right)
+\end{align}
+\]</span></p>
+</section>
+<section id="shrinkage-across-states" class="slide level2">
+<h2>Shrinkage Across States</h2>
+<br>
+<center>
+<img data-src="figs/shrinkage_states.png" style="width:60.0%">
+</center>
+</section>
+<section id="shrinkage-across-subcategories" class="slide level2">
+<h2>Shrinkage Across Subcategories</h2>
+<center>
+<img data-src="figs/shrinkage_subcategories.png" style="width:60.0%">
+</center>
+</section>
+<section id="variation-across-multiple-sources" class="slide level2">
+<h2>Variation Across Multiple Sources</h2>
+<center>
+<img data-src="figs/variation_sources.png" style="width:80.0%">
+</center>
+</section>
+<section id="mcmc-inference" class="slide level2">
+<h2>MCMC Inference</h2>
+<ul>
+<li><p>Model implemented in probabilistic programming library, <a href="https://num.pyro.ai/en/stable/">numpyro</a></p></li>
+<li><p>MCMC inference with Hamiltonian Monte Carlo</p></li>
+<li><p>Run multiple chains, check Rhats and effective sample sizes</p></li>
+</ul>
+</section>
+<section id="mcmc-inference-1" class="slide level2">
+<h2>MCMC Inference</h2>
+<ul>
+<li><p>Fit models for each category</p>
+<ul>
+<li>Mortality: Total, race/ethnicity, timing of death and type of death</li>
+<li>Fertility: Total, age, race/ethnicity, education, insurance</li>
+</ul></li>
+<li><p>For each, fit models for multiple latent ranks and check fit</p></li>
+<li><p>Code available at:</p>
+<ul>
+<li><a href="https://github.com/afranks86/dobbs_fertility">github.com/afranks86/dobbs_fertility</a></li>
+<li><a href="https://github.com/afranks86/dobbs_infant_mortality">github.com/afranks86/dobbs_infant_mortality</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="model-selection-and-checking" class="slide level2">
+<h2>Model Selection and Checking</h2>
+<ul>
+<li>In-sample checks:
+<ul>
+<li>Question: how well does the model fit the observed data</li>
+<li>Tool: gap plots and posterior predictive comparisons</li>
+<li>Used to select latent factor rank</li>
+</ul></li>
+<li>Out-of-sample checks
+<ul>
+<li>Question: how well can we forecast</li>
+<li>Tool: placebo-in-time checks</li>
+</ul></li>
+</ul>
+</section>
+<section id="results---texas" class="slide level2">
+<h2>Results - Texas</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<center>
+<img data-src="figs/model_fit_texas.png" style="width:100.0%">
+</center>
+</div><div class="column" style="width:50%;">
+<center>
+<img data-src="figs/gap_plot_texas.png" style="width:100.0%">
+</center>
+</div></div>
+</section>
+<section id="posterior-predictive-checks" class="slide level2 smaller">
+<h2>Posterior Predictive Checks</h2>
+<ul>
+<li><p>Posterior predictive checks are used to assess how well a Bayesian model fits observed data</p></li>
+<li><p>Unlike classical hypothesis testing, posterior predictive checks focus on practical significance of model inadequacies</p></li>
+<li><p><span class="math inline">\(\mathbb{P}(T^{\text{pred}} &gt; T^{\text{obs}} \mid Y) = \int \mathbb{P}(T^{\text{pred}} &gt; T^{\text{obs}} \mid Y, \theta) \mathbb{P}(\theta \mid Y) d\theta\)</span> should be far from 0 and 1.</p></li>
+</ul>
+</section>
+<section id="posterior-predictive-checks-1" class="slide level2">
+<h2>Posterior Predictive Checks</h2>
+<ul>
+<li><p>Maximum absolute residual: identify outliers inconsistent with the model: <span class="math inline">\(T_{ij} = \tau_{ij} =  \max_{t} | r_{ijy}|\)</span></p></li>
+<li><p>Residual autocorrelation: check for remaining autocorrelation after controlling latent factors (and seasonal trends)</p>
+<ul>
+<li>Test statistic based on residual autocorrelation at different lags</li>
+<li><span class="math inline">\(T_{ij} = cor(r_{ijt}, r_{i,j,t+l})\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="ppc-max-residual" class="slide level2">
+<h2>PPC: Max Residual</h2>
+<center>
+<img data-src="figs/posterior_predictive_max_residual.png" style="width:80.0%">
+</center>
+</section>
+<section id="posterior-predictive-checks-2" class="slide level2">
+<h2>Posterior Predictive Checks</h2>
+<p>Across-unit correlation: states should be uncorrelated after controlling for latent factors:</p>
+<ul>
+<li>Test statistic based on eigenspectrum of residual correlation matrix</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Let <span class="math inline">\(\mathcal{C} = (c_{ii'})\)</span> where <span class="math inline">\({c}_{ii'} =\)</span> cor(<span class="math inline">\({r}_{i\cdot}, {r}_{i'\cdot}\)</span>)</li>
+<li><span class="math inline">\(T = \sigma_{max}(\mathcal{C})\)</span> where <span class="math inline">\(\sigma_{max}(\mathcal{C})\)</span> is the largest singular of <span class="math inline">\(\mathcal{C}\)</span>.</li>
+<li>T should be small for uncorrelated state-residuals</li>
+</ul>
+</div>
+</section>
+<section id="ppc-state-correlations" class="slide level2">
+<h2>PPC: State Correlations</h2>
+<center>
+<img data-src="figs/posterior_predictive_correlations.png" style="width:60.0%">
+</center>
+</section>
+<section id="placebo-in-time" class="slide level2">
+<h2>Placebo-in-Time</h2>
+<center>
+<img data-src="figs/placebo_in_time.png">
+</center>
+</section>
+<section id="placebo-in-time-1" class="slide level2">
+<h2>Placebo-in-Time</h2>
+<center>
+<img data-src="figs/placebo_event_study.png" style="width:60.0%">
+</center>
+</section>
+<section id="fertility-impact-by-subgroup" class="slide level2">
+<h2>Fertility Impact by Subgroup</h2>
+<center>
+<img data-src="figs/fertility_impact.png" style="width:60.0%">
+</center>
+<center>
++1.7% overall increase
+</center>
+</section>
+<section id="state-specific-effects-on-inf.-mortality" class="slide level2 smaller">
+<h2>State-Specific Effects on Inf. Mortality</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="figs/states_infant_mortality.png" style="width:70.0%"></p>
+</div><div class="column" style="width:30%;">
+<p><br> <br> <br></p>
+<p>In banned states overall, the infant mortality rate increased by 5.6%</p>
+<ul>
+<li>Kentucky: +7.5%</li>
+<li>Texas: +8.9%</li>
+</ul>
+</div></div>
+</section>
+<section id="effect-on-infant-mortality-by-cause" class="slide level2">
+<h2>Effect on Infant Mortality by Cause</h2>
+
+<img data-src="figs/infant_mortality_cause.png" style="width:60.0%" class="r-stretch"><ul>
+<li>+10.9% increase in congenital deaths</li>
+<li>+4.2% increase in non-congenital deaths</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Note: majority of deaths attributable to the bans are non-congenital</li>
+</ul>
+</div>
+</section>
+<section id="effect-on-infant-mortality-by-raceethnicity" class="slide level2">
+<h2>Effect on Infant Mortality by Race/Ethnicity</h2>
+
+<img data-src="figs/infant_mortality_race.png" style="width:60.0%" class="r-stretch"><ul>
+<li>NH White: +5.1%</li>
+<li>NH Black: +11.0%</li>
+<li>Hispanic: +3.3%</li>
+<li>NH Other: +9.9%</li>
+</ul>
+</section>
+<section id="key-findings" class="slide level2 smaller">
+<h2>Key Findings</h2>
+<ul>
+<li>Strong evidence that birth rates increased above expectation in states that banned abortion (+1.6%)
+<ul>
+<li><p>Slightly smaller than prior studies</p></li>
+<li><p>Similar in magnitude of recent population-wide events</p></li>
+<li><p>Largest impacts among those experiencing greatest structural disadvantage (consistent across states)</p></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Infant mortality increased in states with bans (+5.5%)
+<ul>
+<li>Outsized influence of Texas</li>
+<li>Double the impact among non-Hispanic Black infants</li>
+<li>Larger relative increase among congenital deaths</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="implications-1" class="slide level2">
+<h2>Implications</h2>
+<ul>
+<li>Profound health, social and economic implications of being unable to obtain an abortion (Greene Foster 2020)</li>
+<li>State-specific policies and social contexts may present additional barriers for disadvantaged women</li>
+<li>Bans exacerbate existing health disparities</li>
+<li>Future work: impact of abortion bans on maternal morbidity, high-risk pregnancy care, and birth outcomes (e.g., preterm birth, low birthweight)</li>
+</ul>
+</section>
+<section id="methodological-takeaways" class="slide level2">
+<h2>Methodological Takeaways</h2>
+<ul>
+<li><p>Missing data and staggered adoption are easier to handle with Bayesian models</p></li>
+<li><p>Hierarchical modeling of the treatment effect in panel data is an underexplored strategy for estimating heterogeneous treatment effects</p></li>
+<li><p>Choice of temporal aggregation is important and tied to the amount of missingness</p></li>
+<li><p>More work needed to understand how and when to disaggregate when inferring total effects</p></li>
+</ul>
+</section>
+<section id="publications" class="slide level2">
+<h2>Publications</h2>
+<center>
+<img data-src="figs/gemill_2025.png" style="width:40.0%"> <img data-src="figs/bell_2025.png" style="width:40.0%">
+<center>
+<p>Papers published in JAMA. See <span class="citation" data-cites="gemill2025us">Gemmill et al. (<a href="#/thank-you" role="doc-biblioref" onclick="">2025</a>)</span> and <span class="citation" data-cites="bell2025us">Bell et al. (<a href="#/thank-you" role="doc-biblioref" onclick="">2025</a>)</span>. Supplementary materials contain modeling details.</p>
+</center></center></section>
+<section id="thank-you" class="slide level2 smaller scrollable">
+<h2>Thank you!</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bell2025us" class="csl-entry" role="listitem">
+Bell, Suzanne O, Alexander M Franks, David Arbour, Selena Anjur-Dietrich, Elizabeth A Stuart, Eli Ben-Michael, Avi Feller, and Alison Gemmill. 2025. <span>“US Abortion Bans and Fertility.”</span> <em>JAMA</em>.
+</div>
+<div id="ref-caraher2024abortion" class="csl-entry" role="listitem">
+Caraher, Raymond. 2024. <span>“Do Abortion Bans Affect Reproductive and Infant Health? Evidence from Texas’s 2021 Ban and Its Impact on Health Disparities.”</span> <em>Political Economy Research Institute Working Paper No</em> 606.
+</div>
+<div id="ref-dench2024effects" class="csl-entry" role="listitem">
+Dench, Daniel, Mayra Pineda-Torres, and Caitlin Myers. 2024. <span>“The Effects of Post-Dobbs Abortion Bans on Fertility.”</span> <em>Journal of Public Economics</em> 234: 105124.
+</div>
+<div id="ref-gemill2025us" class="csl-entry" role="listitem">
+Gemmill, Alison, Alexander M. Franks, Selena Anjur-Dietrich, Amy Ozinsky, David Arbour, Elizabeth A. Stuart, Eli Ben-Michael, Avi Feller, and Suzanne O. Bell. 2025. <span>“US Abortion Bans and Infant Mortality.”</span> <em>JAMA</em> 333 (15): 1315–23. <a href="https://doi.org/10.1001/jama.2024.28517">https://doi.org/10.1001/jama.2024.28517</a>.
+</div>
+<div id="ref-gemmill2024texas_infant" class="csl-entry" role="listitem">
+Gemmill, Alison, Claire E Margerison, Elizabeth A Stuart, and Suzanne O Bell. 2024. <span>“Infant Deaths After Texas’ 2021 Ban on Abortion in Early Pregnancy.”</span> <em>JAMA Pediatrics</em> 178 (8): 784–91.
+</div>
+<div id="ref-sun2024temporal" class="csl-entry" role="listitem">
+Sun, Liyang, Eli Ben-Michael, and Avi Feller. 2024. <span>“Temporal Aggregation for the Synthetic Control Method.”</span> In <em>AEA Papers and Proceedings</em>, 114:614–17. American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203.
+</div>
+</div>
+</section>
+<section>
+<section id="additional-slides" class="title-slide slide level1 center">
+<h1>Additional Slides</h1>
+
+</section>
+<section id="fertility-data" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Fertility Data</h2>
+<ul>
+<li>Bimonthly (e.g., January-February) counts of <strong>live births</strong> for 50 states and DC from birth certificates for 2014-2023
+<ul>
+<li>Compiled by the National Center for Health Statistics (NCHS)</li>
+<li>2023 provisional data</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Denominators (women 15-44) by state-year for 2014-2022 (imputed 2023)
+<ul>
+<li>Census: total counts and by age, race/ethnicity</li>
+<li>American Community Survey: proportion by education, marital status, insurance (indirectly)</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="fertility-approach" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Fertility Approach</h2>
+<ul>
+<li>Outcome: fertility rate (births per 1,000 per year)</li>
+<li>Exposure: 6-week or complete abortion ban (14 states<sup>1</sup>), staggered adoption</li>
+<li>Pre-policy period: January 2014 through ~December 2022</li>
+<li>Treated period: ~January 2023 through December 2023</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Subgroups
+<ul>
+<li>Age: 15-24, 25-34, 35-44</li>
+<li>Race/ethnicity: non-Hispanic White, non-Hispanic Black, Hispanic, and Other</li>
+<li>Marital status: married, not married</li>
+<li>Educational attainment: &lt;high school, high school degree, some college, college degree+</li>
+<li>Insurance payer for the delivery: Medicaid, non-Medicaid</li>
+</ul></li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>States include Alabama, Arkansas, Georgia, Idaho, Kentucky, Louisiana, Mississippi, Missouri, Oklahoma, South Dakota, Tennessee, Texas, West Virginia, Wisconsin</p></li></ol></aside></section>
+<section id="infant-mortality-data" class="slide level2" data-visibility="uncounted">
+<h2>Infant Mortality Data</h2>
+<ul>
+<li>Biannual (e.g., January-June) counts of <strong>infant deaths (&lt; 1 year)</strong> for 50 states and DC from death certificates for 2012-2023
+<ul>
+<li>2023 provisional data</li>
+<li>Impute suppressed data</li>
+</ul></li>
+<li>Denominators (live births) by state-biannual period for 2012-2023 from birth certificates</li>
+</ul>
+</section>
+<section id="missing-data" class="slide level2" data-visibility="uncounted">
+<h2>Missing Data</h2>
+<center>
+<img data-src="figs/missing_data.png">
+</center>
+<p>Note: missingness depends on level of temporal aggregation</p>
+</section>
+<section id="median-infant-deaths-per-half-year" class="slide level2" data-visibility="uncounted">
+<h2>Median Infant Deaths per Half-Year</h2>
+<center>
+<img data-src="figs/infant_deaths_counts.png">
+</center>
+</section>
+<section id="state-specific-effects-on-fertility-rate" class="slide level2 smaller" data-visibility="uncounted">
+<h2>State-Specific Effects on Fertility Rate</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<center>
+<img data-src="figs/fertility_state_impacts.png" style="width:80.0%">
+</center>
+</div><div class="column" style="width:30%;">
+<p><br> <br> <br></p>
+<ul>
+<li><p>Range: 0.6% - 2.1%</p></li>
+<li><p>Overall: +1.7%</p></li>
+<li><p>Non-Texas: +0.9%</p></li>
+</ul>
+</div></div>
+</section>
+<section id="likelihood---infant-mortality" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Likelihood - Infant Mortality</h2>
+<p>Let <span class="math inline">\(M_{ijt}\)</span> denote the indicator for suppressed counts, with <span class="math inline">\(M_{ijt}=1\)</span> if <span class="math inline">\(0 &lt;  Y_{ijt}^{\text{obs}} &lt; 10\)</span> and <span class="math inline">\(M_{ijt}=0\)</span> otherwise. % If we let <span class="math inline">\(B_{ijt}^{obs} = B_{ijt}(G_i)^{D_{ijt}}B_{ijt}(\infty)^{(1-D_{ijt})}\)</span> then, The observed data likelihood can then be written as: <span class="math display">\[\begin{align} \label{eq:obs_data_likelihood}
+\mathbb{P}(\mathbf{Y}^{obs}, \mathbf{M} \mid \mathbf{B}^{obs}, \mathbf{D}, \rho, \tau) =&amp; \prod_{ijt}\left[ ((1-P_{\text{miss}}(\rho_{ijt}B_{ijt}^{obs}))\text{Pois}(Y_{ijt}; \rho_{ijt}B_{ijt}^{obs}))^{(1-M_{ijt})(1-D_{ijt})}\right.  \times \\
+&amp;((1-P_{\text{miss}}(\tau_{ijt}\rho_{ijt}B_{ijt}^{obs}))~\text{Pois}(Y_{ijt}; \tau_{ijt}\rho_{ijt}B_{ijt}^{obs} ))^{{(1-M_{ijt})D_{ijt}}}\times \\
+&amp;\left.(P_{\text{miss}}(\rho_{ijt}B_{ijt}^{obs})^{M_{ijt}(1-D_{itj})}(P_{\text{miss}}(\tau_{ijt}\rho_{ijt}B_{ijt}^{obs})^{M_{ijt}D_{itj}})\right].
+\end{align}\]</span> where <span class="math inline">\(\text{Pois}(Y_{ijt}; \rho_{ijt}B_{ijt}^{obs})\)</span> is the poisson PMF with mean <span class="math inline">\(\rho_{ijt}B_{ijt}^{obs}\)</span> evaluated at <span class="math inline">\(Y_{ijt}\)</span>; and <span class="math display">\[P_{\text{miss}}(\rho_{ijt}B_{ijt}^{obs}) = (F(9; \rho_{ijt}B_{ijt}^{obs}) - F(0; \rho_{ijt}B_{ijt}^{obs})), \]</span> where <span class="math inline">\(F(a; \mu)\)</span> is the CDF of a Poisson with mean <span class="math inline">\(\mu\)</span> evaluated at <span class="math inline">\(a\)</span> so that <span class="math inline">\(P_{\text{miss}}(\mu_{ijt}) = F(9; \mu) - F(0; \mu)\)</span> is the probability of observing a missing count between 1 and 9, inclusive.</p>
+
+</section></section>
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>RAND - Stat Group Seminar</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="rand_causal_abortion_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="rand_causal_abortion_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
