@@ -10,15 +10,17 @@
       <div class="article-style">{{ . }}</div>
       {{ end }}
       
-      {{ range (.Paginate (.Data.Pages.GroupByParam "institution")).PageGroups }}
+      {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
       <div class="row" id="talk_list">
-        <div class="col-lg-2">
-          <h3>{{ .Key }}</h3>
-        </div>
-        <div class="col-lg-10">
+        <div class="col-lg-12">
 
           {{ range .Pages }}
-              {{ partial "talks_li_compact" . }}
+              <div class="talk-item">
+                {{ if .Params.institution }}
+                <div class="institution">{{ .Params.institution }}</div>
+                {{ end }}
+                {{ partial "talks_li_compact" . }}
+              </div>
           {{ end }}
 
         </div>
