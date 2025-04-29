@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Quantifying Heterogeneity in the Causal Impact of Abortion Restrictions"
-institution: "RAND"
+institution: ""
 summary: 'Invited talk on "Quantifying Heterogeneity in the Causal Impact of Abortion Restrictions"'
 
 # Talk start and end times.

@@ -1,10 +1,7 @@
-
-
-
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "The Central Coast Data Science Initiative"
-institution: "JSM 2023"
+institution: ""
 summary: 'An Overview of the Central Coast Data Science Initiative at UCSB'
 
 # Talk start and end times.
