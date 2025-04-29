@@ -11,7 +11,7 @@ authors:
 - Alexander Franks
 tags: []
 categories: []
-date: '2022-01-01'
+date: '2024-01-01'
 lastmod: 2022-01-11T11:55:42-07:00
 featured: false
 draft: false
@@ -50,7 +50,7 @@ be bounded. We also describe approaches for reasoning about effects, including c
 parameters, quantifying robustness of effect estimates, and selecting models which are most consistent
 with prior hypotheses.
 <center><img src="/img/confounder_bias.gif" alt="drawing" width="80%" /></center>' 
-publication: '*arXiv preprint arXiv:2102.09412*'
+publication: '*Journal of Machine Learning Research*'
 
 # links:
 # - name: ""
