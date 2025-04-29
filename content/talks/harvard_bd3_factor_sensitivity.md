@@ -1,10 +1,7 @@
-
-
-
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Sensitivity to Unobserved Confounding with Factor Structured Outcomes"
-institution: "Harvard Biostatistics"
+institution: ""
 summary: 'Invited talk on "Sensitivity to Unobserved Confounding with Factor Structured Outcomes"'
 
 # Talk start and end times.
