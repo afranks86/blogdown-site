@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Shared Subspace Models for Multi-Group Covariance Estimation"
 institution: ""
-summary: 'Invited talk on "Shared Subspace Models for Multi-Group Covariance Estimation"'
+summary: 'Invited talk on "Shared Subspace Models for Multi-Group Covariance Estimation". See the [corresponding publication](/publication/2019-shared/) for more details.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

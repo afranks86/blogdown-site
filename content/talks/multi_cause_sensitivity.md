@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Sensitivity Analysis for Multi-Treatment Causal Inference with Unobserved Confounding"
 institution: ""
-summary: 'Invited talk on "Sensitivity Analysis for Multi-Treatment Causal Inference with Unobserved Confounding"'
+summary: 'Invited talk on "Sensitivity Analysis for Multi-Treatment Causal Inference with Unobserved Confounding". See the [corresponding publication](/publication/2022-bayes-multi-treat/) for more details.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

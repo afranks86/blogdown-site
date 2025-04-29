@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Flexible Sensitivity Analysis Flexible Sensitivity Analysis for Observational Studies without Observable Implications"
 institution: ""
-summary: 'Invited talk on "Flexible Sensitivity Analysis Flexible Sensitivity Analysis for Observational Studies without Observable Implications"'
+summary: 'Invited talk on "Flexible Sensitivity Analysis Flexible Sensitivity Analysis for Observational Studies without Observable Implications". See the [corresponding publication](/publication/2019-flexible/) for more details.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "Sensitivity to Unobserved Confounding with Factor Structured Outcomes"
 institution: ""
-summary: 'Invited talk on "Sensitivity to Unobserved Confounding with Factor Structured Outcomes"'
+summary: 'Invited talk on "Sensitivity to Unobserved Confounding with Factor Structured Outcomes". See the [corresponding publication](/publication/2022-bayes-multi-outcome/) for more details.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
