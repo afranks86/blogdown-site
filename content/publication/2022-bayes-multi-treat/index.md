@@ -56,7 +56,7 @@ url_code: https://github.com/afranks86/multi-treat-inference
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/talks/multi_cause_sensitivity'
 url_source: ''
 url_video: ''
 ---

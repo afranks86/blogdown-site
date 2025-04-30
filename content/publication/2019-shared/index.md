@@ -48,7 +48,7 @@ url_code: https://github.com/afranks86/mgCov
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/talks/shared_subspace'
 url_source: ''
 url_video: ''
 ---

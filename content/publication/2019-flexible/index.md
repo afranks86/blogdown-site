@@ -45,7 +45,7 @@ url_code: https://github.com/JiajingZ/TukeySens
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/talks/flexible_sensitivity'
 url_source: ''
 url_video: ''
 ---

@@ -48,7 +48,7 @@ url_code: 'https://github.com/afranks86/factor-sensitivity'
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/talks/harvard_bd3_factor_sensitivity/'
 url_source: ''
 url_video: ''
 ---
