@@ -11,7 +11,7 @@ summary: ""
 date: "2025-04-22"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors: ["Alex Franks"]
+authors: ["Suzanne Bell", "Alison Gemmill", "Alex Franks", "Avi Feller", "Selena Anjur-Dietrich", "Amy Ozinsky", "Elizabeth Stuart", "Eli Ben-Michael", "David Arbour"]
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
