@@ -4,7 +4,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 title: "PSTAT 197: Data Science Capstone"
-institution: "Current Courses"
+institution: "Past Courses"
 summary: 'Part of the [Central Coast Data Science Partnership](https://centralcoastdatascience.org/). (2021 and 2022)'
 
 # Talk start and end times.

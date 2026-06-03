@@ -11,7 +11,7 @@ summary: ""
 date: "2025-09-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors: ["Alex Franks"]
+authors: ["Jiaxi Wu", "Alex Franks"]
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
